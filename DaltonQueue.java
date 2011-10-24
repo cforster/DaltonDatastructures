@@ -12,5 +12,16 @@ Sophia Edelstein
 
 public class DaltonQueue extends java.util.Queue
 {
+    
+    /*
+      Author: Sophia
+      Function: length
+    */
+    public int length()
+    {
+	this
+	return front-back; 
+    }
 
+    
 }
