@@ -2,6 +2,8 @@
 Authors:
 Charles Forster
 Jason Shein
+Katherine Odom
+Malina Buturovic
 Derek Whang
 Annelise Steele <3
  */
