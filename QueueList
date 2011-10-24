@@ -6,15 +6,17 @@ Jason
 Isabella 
 Malina  
 
-Isabella dump -- Erase all
+
+dump -- Erase all (Katherine)
+>>>>>>> origin/master
 convert -- return a stack
 reverse
 sort
 switch
 search
 replaceAt(x)
-replaceAt(y)
-peek
+replaceAt(y) Isabella
+peek--derdertkd95
 peekall
 length
 toString
