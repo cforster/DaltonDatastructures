@@ -1,8 +1,10 @@
 /*
- This is the Dalton Stack assignment for the CSA class
+  This is the Dalton Stack assignment for the CSA class
 
  Authors:
  Charles Forster
+ Josh Kaye
+
 
  */
 public class DaltonStack extends java.util.Stack
