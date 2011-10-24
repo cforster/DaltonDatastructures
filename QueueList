@@ -6,15 +6,17 @@ Jason
 Isabella 
 Malina  
 
-dump -- Erase all
+dump -- Erase all (Katherine)
 convert -- return a stack
 reverse 
 sort
 switch --> jason
 search 
+switch Sophia 
+search
 replaceAt(x)
 replaceAt(y)
-peek
+peek--derdertkd95
 peekall
-length
+length Sophia 
 toString
