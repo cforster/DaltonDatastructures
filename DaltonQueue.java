@@ -1,7 +1,8 @@
 /*
 Authors:
 Charles Forster
-<<<<<<< HEAD
+Jason Shein
+Katherine Odom
 Malina Buturovic
 Derek Whang
 Annelise Steele <3
