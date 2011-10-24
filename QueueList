@@ -14,7 +14,7 @@ switch
 search
 replaceAt(x)
 replaceAt(y)
-peek
+peek--derdertkd95
 peekall
 length
 toString
