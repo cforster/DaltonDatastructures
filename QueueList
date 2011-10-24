@@ -10,9 +10,9 @@ dump -- Erase all
 convert -- return a stack
 reverse
 sort
-switch
+switchMalina
 search
-replaceAt(x)
+replaceAt(x)Malina
 replaceAt(y)
 peek
 peekall
