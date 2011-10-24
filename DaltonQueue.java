@@ -13,4 +13,16 @@ Sophia Edelstein
 public class DaltonQueue extends java.util.Queue
 {
 
+    /* 
+       Author: ISABELLA and malina. 
+
+     */
+
+    void ReplaceAt(int index; int new)
+    {
+	Array[index] = new;
+    }
+
+
+
 }
