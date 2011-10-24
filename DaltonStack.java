@@ -18,7 +18,22 @@ Jeffrey Stern
 public class DaltonStack extends java.util.Stack
 {
 
+   
     /*
+      takes a portion (from i to j) of the original Stack
+
+     */
+    public DaltonStack  subStack(int i, int j)
+    {
+
+
+    }
+
+
+
+
+
+ /*
       Function: deleteTop
       description:  pops the top item and doesn't return it.
       Author: Charlie Forster
