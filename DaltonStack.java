@@ -3,7 +3,7 @@
 
  Authors:
  Charles Forster
-Jeffrey Stern
+ Jeffrey Stern
  Taylor Wright
  Harry DiPirinzio
  Josh Kaye
