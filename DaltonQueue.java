@@ -1,6 +1,7 @@
 /*
 Authors:
 Charles Forster
+Isabella Giovannini
 Jason Shein
 Katherine Odom
 Malina Buturovic
