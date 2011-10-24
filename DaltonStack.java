@@ -4,6 +4,8 @@
  Authors:
  Xander Chase
  Charles Forster
+ Taylor Wright
+ Harry DiPirinzio
  Josh Kaye
  Alex Mayer
  Maya Klabin
