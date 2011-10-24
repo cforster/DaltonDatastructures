@@ -8,7 +8,6 @@ Malina
 
 
 dump -- Erase all (Katherine)
->>>>>>> origin/master
 convert -- return a stack
 reverse 
 sort
@@ -16,8 +15,7 @@ switch(x,y) --> jason
 search 
 switch Sophia 
 search
-replaceAt(x)
-replaceAt(y) Isabella
+replaceAt(x)Malina + isa
 peek--derdertkd95
 peekall
 length Sophia 
