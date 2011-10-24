@@ -8,10 +8,10 @@ Malina
 
 dump -- Erase all
 convert -- return a stack
-reverse
+reverse 
 sort
-switch
-search
+switch --> jason
+search 
 replaceAt(x)
 replaceAt(y)
 peek
