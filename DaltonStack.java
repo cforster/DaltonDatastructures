@@ -3,7 +3,7 @@
 
  Authors:
  Charles Forster
-
+ Emily Lovett
  */
 public class DaltonStack extends java.util.Stack
 {
