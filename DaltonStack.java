@@ -1,13 +1,15 @@
 /*
- This is the Dalton Stack assignment for the CSA class
+  This is the Dalton Stack assignment for the CSA class
 
  Authors:
  Charles Forster
-<<<<<<< HEAD
 Jeffrey Stern
-=======
+ Taylor Wright
+ Harry DiPirinzio
+ Josh Kaye
+ Alex Mayer
+ Maya Klabin
  Michael Dubin
->>>>>>> origin/master
 
  */
 public class DaltonStack extends java.util.Stack
