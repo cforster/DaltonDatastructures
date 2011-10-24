@@ -3,7 +3,11 @@
 
  Authors:
  Charles Forster
+<<<<<<< HEAD
  Maya Klabin
+=======
+ Michael Dubin
+>>>>>>> origin/master
 
  */
 public class DaltonStack extends java.util.Stack
