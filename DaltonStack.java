@@ -6,7 +6,7 @@
  Charles Forster
  Jeffrey Stern
  Emily Lovett
-Jeffrey Stern
+ Jeffrey Stern
  Taylor Wright
  Harry DiPirinzio
  Josh Kaye
