@@ -14,6 +14,10 @@ Jeffrey Stern
  Maya Klabin
  Michael Dubin
 
+
+ /*delete all(Xander), substack(jeff, alex), convert(), delete one(michael, josh), reverse (taylor, harry), frequency(emily), length/size (maya/dubin)*/
+
+
  */
 public class DaltonStack extends java.util.Stack
 {
