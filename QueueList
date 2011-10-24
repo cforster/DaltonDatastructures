@@ -1,2 +1,12 @@
 dump -- Erase all
 convert -- return a stack
+reverse
+sort
+switch
+search
+replaceAt(x)
+replaceAt(y)
+peek
+peekall
+length
+toString
