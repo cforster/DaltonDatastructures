@@ -3,6 +3,7 @@
 
  Authors:
  Charles Forster
+Jeffrey Stern
 
  */
 public class DaltonStack extends java.util.Stack
