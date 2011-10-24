@@ -4,6 +4,7 @@
  Authors:
  Xander Chase
  Charles Forster
+ Jeffrey Stern
  Emily Lovett
 Jeffrey Stern
  Taylor Wright
