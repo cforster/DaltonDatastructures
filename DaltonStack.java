@@ -4,7 +4,9 @@
  Authors:
  Charles Forster
  Josh Kaye
-
+ Alex Mayer
+ Maya Klabin
+ Michael Dubin
 
  */
 public class DaltonStack extends java.util.Stack
