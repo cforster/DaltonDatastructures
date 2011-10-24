@@ -10,11 +10,11 @@ dump -- Erase all
 convert -- return a stack
 reverse
 sort
-switch
+switch Sophia 
 search
 replaceAt(x)
 replaceAt(y)
 peek
 peekall
-length
+length Sophia 
 toString
