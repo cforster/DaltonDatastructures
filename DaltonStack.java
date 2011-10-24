@@ -4,6 +4,8 @@
  Authors:
  Charles Forster
  Emily Lovett
+ Michael Dubin
+
  */
 public class DaltonStack extends java.util.Stack
 {
