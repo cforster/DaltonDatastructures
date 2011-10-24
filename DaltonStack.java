@@ -4,6 +4,7 @@
  Authors:
  Xander Chase
  Charles Forster
+Jeffrey Stern
  Taylor Wright
  Harry DiPirinzio
  Josh Kaye
