@@ -1,10 +1,13 @@
 /*
- This is the Dalton Stack assignment for the CSA class
+  This is the Dalton Stack assignment for the CSA class
 
  Authors:
  Charles Forster
  Taylor Wright
  Harry DiPirinzio
+ Josh Kaye
+ Alex Mayer
+ Maya Klabin
  Michael Dubin
 
  */
