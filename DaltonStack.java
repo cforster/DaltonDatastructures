@@ -2,8 +2,11 @@
   This is the Dalton Stack assignment for the CSA class
 
  Authors:
+ Xander Chase
  Charles Forster
  Jeffrey Stern
+ Emily Lovett
+Jeffrey Stern
  Taylor Wright
  Harry DiPirinzio
  Josh Kaye
