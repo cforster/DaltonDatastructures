@@ -2,6 +2,7 @@
  This is the Dalton Stack assignment for the CSA class
 
  Authors:
+ Xander Chase
  Charles Forster
 
  */
