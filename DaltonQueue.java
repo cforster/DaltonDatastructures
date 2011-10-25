@@ -36,16 +36,32 @@ public class DaltonQueue extends java.util.Queue
 
 
 
-
+    /*
+      Author: Isabella
+     */
     
 
-
-
-    /*
-      delete everything from the queue:
-     */
-    void dump()
+    //in progress
+    void sort()
     {
-	this.remove.......
+	//make the queue into the array:
+	Object[] queue = new Object[queue.size()]; 
+	int counter = 0;
+	while (!this.isEmpty()) //go through the queue
+	    {
+		queue[counter]= this.poll();
+	    }
+
+	//sort the array:
+	if(queue[counter])<queue[counter--]	 
+      {
+	  
+      }
+	
+
+	//return it to the queue:
+
+
+
     }
 }
