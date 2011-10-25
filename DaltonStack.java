@@ -28,6 +28,7 @@ public class DaltonStack extends java.util.Stack
       takes a portion (from i to j) of the original Stack
 
      */
+    //SUBSTRING FOR THE MYSTRING PROGRAM (NOT STACK)
     /* public DaltonStack  subStack(int i, int j)
     {
 	int [] substack = new int [j-i+1];//new substrings length
@@ -40,8 +41,8 @@ public class DaltonStack extends java.util.Stack
 	    }
 	return new DaltonStack (substack);
     */
-
-
+    /*create a top stack, create the substack (it would be backward-->need to reverse) put the removed items back on the original stack, return the substack.
+     */
     }
 
 
@@ -66,14 +67,30 @@ public class DaltonStack extends java.util.Stack
       description: Deletes an item from anywhere in the stack & replaces all that were above it
       Authors: Josh Kaye and Michael Zhao
       Input: Desired item to delete
-      Output: value of popped item
+      Output: none
       Notes: none
 
-    public void deleteOne()
+    public void deleteOne(int blah)
     {
+<<<<<<< HEAD
     Stack mzstack = new Stack;
     int [] popped = new int[mzstack.length]; 
     
+=======
+
+    
+    while (found==false)
+    {
+    for(int i=0; i<stack.length; i++)
+    {
+    if (Stack.peek==blah;    found = true;
+    else found = false;
+    }
+
+
+    }
+
+>>>>>>> origin/master
     }
 
 }
