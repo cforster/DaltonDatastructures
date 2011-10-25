@@ -59,6 +59,9 @@ public class DaltonStack extends java.util.Stack
       Output: value of popped item
       Notes: none
 
+    public void deleteOne()
+    {
 
+    }
 
 }
