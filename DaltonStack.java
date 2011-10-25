@@ -28,9 +28,18 @@ public class DaltonStack extends java.util.Stack
       takes a portion (from i to j) of the original Stack
 
      */
-    public DaltonStack  subStack(int i, int j)
+    /* public DaltonStack  subStack(int i, int j)
     {
-       
+	int [] substack = new int [j-i+1];//new substrings length
+	if (i<j)
+	    {
+		for (int c=i; c<=j; c++)
+		    {
+			substack [c-i]=m[c];
+		    }
+	    }
+	return new DaltonStack (substack);
+    */
 
 
     }
