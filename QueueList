@@ -12,8 +12,6 @@ convert -- return a stack
 reverse 
 sort isabella
 switch(x,y) --> jason
-search 
-switch Sophia 
 search
 replaceAt(x)
 replaceAt(y)
