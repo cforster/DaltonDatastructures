@@ -19,7 +19,7 @@
  /*delete all(Xander), substack(jeff, alex), convert(), delete one(michael, josh), reverse (taylor, harry), frequency(emily), length/size (maya/dubin)*/
 
 
- */
+
 public class DaltonStack extends java.util.Stack
 {
 
@@ -31,11 +31,28 @@ public class DaltonStack extends java.util.Stack
     public DaltonStack  subStack(int i, int j)
     {
 
-
+	return null;
     }
 
 
+    public void reverse()
+    {
+	java.util.Queue<Object> myQueue = new java.util.LinkedList<Object>();
 
+	//pop the stack into a queue (until it is empty):
+	while(!this.isEmpty())
+	    {
+		myQueue.add(this.pop());
+	    }
+
+	//get the queue into the stack
+
+        while(! myQueue.isEmpty())
+	    {
+		this.push(myQueue.remove());
+	    }
+
+    }
 
 
  /*
