@@ -66,15 +66,23 @@ public class DaltonStack extends java.util.Stack
       description: Deletes an item from anywhere in the stack & replaces all that were above it
       Authors: Josh Kaye and Michael Zhao
       Input: Desired item to delete
-      Output: value of popped item
+      Output: none
       Notes: none
 
-    public void deleteOne()
+    public void deleteOne(int blah)
     {
+
     
-    //Grand Michael has arrived.
-    //check 
-    //check 2
+    while (found==false)
+    {
+    for(int i=0; i<stack.length; i++)
+    {
+    if (Stack.peek==blah;    found = true;
+    else found = false;
+    }
+
+
+    }
 
     }
 
