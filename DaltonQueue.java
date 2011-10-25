@@ -39,4 +39,13 @@ public class DaltonQueue extends java.util.Queue
 
     
 
+
+
+    /*
+      delete everything from the queue:
+     */
+    void dump()
+    {
+	this.remove.......
+    }
 }
