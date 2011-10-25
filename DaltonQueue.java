@@ -48,9 +48,6 @@ public class DaltonQueue extends java.util.Queue
 	    } 
     }
 
-<<<<<<< HEAD
-=======
-
 
     /*
       Author: Shein
