@@ -6,6 +6,7 @@ Jason
 Isabella 
 Malina  
 
+
 dump -- Erase all (Katherine)
 convert -- return a stack
 reverse 
@@ -18,5 +19,6 @@ replaceAt(x)
 replaceAt(y)
 peek--derdertkd95/ Annelise
 peekall--Derek/ Annelise
+replaceAt(x)Malina + isa
 length Sophia 
 toString
