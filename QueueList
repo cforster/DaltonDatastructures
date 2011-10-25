@@ -12,7 +12,7 @@ convert -- return a stack
 reverse 
 sort isabella
 switch(x,y) --> jason
-search
+search -->jason
 replaceAt(x)Malina + isa
 peek--derdertkd95
 peekall
