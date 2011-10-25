@@ -72,6 +72,10 @@ public class DaltonStack extends java.util.Stack
 
     public void deleteOne()
     {
+    
+    //Grand Michael has arrived.
+    //check 
+    //check 2
 
     }
 
