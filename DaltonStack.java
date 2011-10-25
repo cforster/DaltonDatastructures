@@ -28,6 +28,7 @@ public class DaltonStack extends java.util.Stack
       takes a portion (from i to j) of the original Stack
 
      */
+    //SUBSTRING FOR THE MYSTRING PROGRAM (NOT STACK)
     /* public DaltonStack  subStack(int i, int j)
     {
 	int [] substack = new int [j-i+1];//new substrings length
@@ -40,8 +41,8 @@ public class DaltonStack extends java.util.Stack
 	    }
 	return new DaltonStack (substack);
     */
-
-
+    /*create a top stack, create the substack (it would be backward-->need to reverse) put the removed items back on the original stack, return the substack.
+     */
     }
 
 
