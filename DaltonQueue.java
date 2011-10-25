@@ -22,12 +22,29 @@ public class DaltonQueue extends java.util.Queue
 	offer("end of array");
 	int length =0;
 	
-	while(peek().toString().equals("end of array")) 
+	while(peek().toString().!equals("end of array")) 
 	    {
 		offer(poll());
 		length++;
 	    }
 	return length; 
+    }
+
+    /*                                                                          
+      Author: Sophia + Annelise                                                            
+      Function: peek all                                                          
+    */
+    public int peekAll()
+    {
+        offer("peek all array");
+       
+
+        while(poll().toString().!equals("peek all array"))
+            {
+                offer(poll());
+		return poll();
+            }
+        
     }
 
 
