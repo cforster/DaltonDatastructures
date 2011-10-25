@@ -60,19 +60,17 @@ public class DaltonQueue extends java.util.Queue
 
 
 
-
-    
-
-
-
     /*
-      delete everything from the queue:
+      Author: Katherine
+      Function: Dump (delete everything from the queue)
      */
     void dump()
     {
-	this.remove.......
+	while(!this.isEmpty())
+	    {
+		this.remove();
+	    } 
     }
-
 
 
     /*
@@ -87,4 +85,5 @@ public class DaltonQueue extends java.util.Queue
 	}
     
 
+>>>>>>> origin/master
 }
