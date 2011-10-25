@@ -17,7 +17,23 @@ public class DaltonQueue extends java.util.Queue
      */
     Object  peek()
     {
+	return this.peek;
+
+
+	//check to see that it isn't empty
 	
+	Object top = this.poll();
+	
+	//poll each item, and offer it to the bottom of the array until we ar at A
+	this.offer("Annelise");
+
+	//this doesn't work yet:
+	Object move;
+	do {
+	    move=this.poll();
+	} while(!move.equals("Annelise"));
+
+	return top;
     }
     
     /*
