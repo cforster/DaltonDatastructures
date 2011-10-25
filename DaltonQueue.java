@@ -12,9 +12,13 @@ Sophia Edelstein
 
 public class DaltonQueue extends java.util.Queue
 {
-<<<<<<< HEAD
-    public class peek
-=======
+    /*
+      Author: annelise and derek
+     */
+    Object  peek()
+    {
+	
+    }
     
     /*
       Author: Sophia
@@ -37,12 +41,11 @@ public class DaltonQueue extends java.util.Queue
 	Array[index] = new;
     }
 
-
-
-
-    
-
-
-
->>>>>>> origin/master
+    /*
+      delete everything from the queue:
+     */
+    void dump()
+    {
+	this.remove.......
+    }
 }
