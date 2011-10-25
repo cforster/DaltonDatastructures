@@ -61,6 +61,17 @@ public class DaltonStack extends java.util.Stack
 	this.pop();
     }
 
+    /*
+      Function: DelOne
+      description: Deletes an item from anywhere in the stack & replaces all that were above it
+      Authors: Josh Kaye and Michael Zhao
+      Input: Desired item to delete
+      Output: value of popped item
+      Notes: none
 
+    public void deleteOne()
+    {
+
+    }
 
 }
