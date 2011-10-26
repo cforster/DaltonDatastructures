@@ -45,6 +45,34 @@ public class DaltonQueue extends java.util.Queue
 
 
     /*
+<<<<<<< HEAD
+      Author: Isabella
+     */
+    
+
+    //in progress
+    void sort()
+    {
+	//make the queue into the array:
+	Object[] queue = new Object[queue.size()]; 
+	int counter = 0;
+	while (!this.isEmpty()) //go through the queue
+	    {
+		queue[counter]= this.poll();
+	    }
+
+	//sort the array:
+	if(queue[counter])<queue[counter--]	 
+      {
+	  
+      }
+	
+
+	//return it to the queue:
+
+
+
+=======
       Author: Katherine
       Function: Dump (delete everything from the queue)
      */
@@ -54,6 +82,7 @@ public class DaltonQueue extends java.util.Queue
 	    {
 		this.remove();
 	    } 
+>>>>>>> origin/master
     }
 
 
