@@ -16,14 +16,14 @@ public class DaltonQueue extends java.util.Queue
       Author: Malina
       Function: peek_all
       /*
-    public string peek_all()
+    public String peek_all()
     {
 	String input="";
 	for (i=front; i<back; i++)
 	    {
 		input=input ", " + Array[index];
 	    }
-	System.out.println(input);
+	return input;
     }
 
 
