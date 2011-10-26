@@ -101,6 +101,7 @@ public class DaltonQueue extends java.util.Queue
     */
     void switch(int x, int y)
 	{
-	    
+	    int queue = new int[];
+	    this.poll
 	}
 }
