@@ -12,14 +12,18 @@ Sophia Edelstein
 
 public class DaltonQueue extends java.util.Queue
 {
-    public string peek_all()
+    /*
+      Author: Malina
+      Function: peek_all
+      /*
+    public String peek_all()
     {
 	String input="";
 	for (i=front; i<back; i++)
 	    {
-		input=input+ ", " + Array[index];
+		input=input ", " + Array[index];
 	    }
-	System.out.println(input);
+	return input;
     }
 
 
@@ -109,26 +113,35 @@ public class DaltonQueue extends java.util.Queue
       Author: Katherine 
       Function: Reverse (in ABC, out CBA)
     /*
-    void reverse 
+
     {
-    
-	/*
-	  Author: Katherine
-	  Function: Dump (delete everything from the queue)
-	*/
-	void dump()
-	{
-	    while(!this.isEmpty())
-		{
-		    this.remove();
-		} 
-	}
-	
+    java.util.Stack myStack = new java.util.Stack();
+    //put everything from this into myStack
+    myStack = this.toStack();
+    this.add(myStack.pop());
 
 
     }
 
+    /*
+      Author: Katherine
+      Function: Dump (delete everything from the queue)
+    */
 
+    void dump()
+    {
+	 while(!this.isEmpty())
+	     {
+		this.remove();
+	     } 
+    }
+	
+
+
+    
+
+
+/*
       Author: Shein
       Function: switch(x,y)
       parameters: x and y are both distances from the front of the queue
@@ -136,6 +149,16 @@ public class DaltonQueue extends java.util.Queue
     */
     void switch(int x, int y)
 	{
+	    java.util.Queue queue2 = new java.util.LinkedList();
+	    java.util.Queue queue3 = new java.util.LinkedList();
+	    int object1;
+
+	    for(int i=0; i<x; i++)
+		{
+		    queue2.offer(this.poll());
+		    
+		}
 	    
+	    this.poll
 	}
 }
