@@ -12,6 +12,10 @@ Sophia Edelstein
 
 public class DaltonQueue extends java.util.Queue
 {
+    /*
+      Author: Malina
+      Function: peek_all
+      /*
     public string peek_all()
     {
 	String input="";
