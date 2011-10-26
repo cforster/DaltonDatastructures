@@ -9,7 +9,7 @@ Malina
 
 
 dump -- Erase all (Katherine)
-convert -- return a stack
+convert -- return a stack-malina
 reverse- Katherine 
 sort isabella
 switch(x,y) --> jason
@@ -18,4 +18,3 @@ replaceAt(x)Malina + isa
 peek--derdertkd95
 peekall-malinA
 length Sophia 
-toString
