@@ -81,6 +81,12 @@ public class DaltonQueue extends java.util.Queue
 	//return it to the queue:
     }
 
+    /*
+      Author: Katherine 
+      Function: Reverse (in ABC, out CBA)
+    /*
+    void reverse 
+    {
     
 	/*
 	  Author: Katherine
@@ -95,7 +101,10 @@ public class DaltonQueue extends java.util.Queue
 	}
 	
 
-    /*
+
+    }
+
+
       Author: Shein
       Function: switch(x,y)
       parameters: x and y are both distances from the front of the queue
