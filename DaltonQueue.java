@@ -21,7 +21,7 @@ public class DaltonQueue extends java.util.Queue
 	String input="";
 	for (i=front; i<back; i++)
 	    {
-		input=input+ ", " + Array[index];
+		input=input ", " + Array[index];
 	    }
 	System.out.println(input);
     }
