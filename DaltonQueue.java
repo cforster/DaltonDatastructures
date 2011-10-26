@@ -12,7 +12,15 @@ Sophia Edelstein
 
 public class DaltonQueue extends java.util.Queue
 {
-    
+    public string peek_all()
+    {
+	String input="";
+	for (i=front; i<back; i++)
+	    {
+		input=input+ ", " + Array[index];
+	    }
+	System.out.println(input);
+    }
     /*
       Author: Sophia
       Function: length
@@ -61,17 +69,44 @@ public class DaltonQueue extends java.util.Queue
 
 
     /*
-      Author: Katherine
-      Function: Dump (delete everything from the queue)
+      Author: Isabella
      */
-    void dump()
+    
+
+    //in progress
+    void sort()
     {
-	while(!this.isEmpty())
+	//make the queue into the array:
+	Object[] queue = new Object[queue.size()]; 
+	int counter = 0;
+	while (!this.isEmpty()) //go through the queue
 	    {
-		this.remove();
-	    } 
+		queue[counter]= this.poll();
+	    }
+
+	//sort the array:
+	if(queue[counter]<queue[counter--])	 
+	    {
+	  
+	    }
+	
+
+	//return it to the queue:
     }
 
+    
+	/*
+	  Author: Katherine
+	  Function: Dump (delete everything from the queue)
+	*/
+	void dump()
+	{
+	    while(!this.isEmpty())
+		{
+		    this.remove();
+		} 
+	}
+	
 
     /*
       Author: Shein
@@ -83,7 +118,4 @@ public class DaltonQueue extends java.util.Queue
 	{
 	    
 	}
-    
-
->>>>>>> origin/master
 }
