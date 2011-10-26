@@ -39,21 +39,8 @@ public class DaltonQueue extends java.util.Queue
     }
 
     /*                                                                          
-      Author: Sophia + Annelise                                                            
-      Function: peek all                                                          
-    */
-    public int peekAll()
-    {
-        offer("peek all array");
-       
-
-        while(poll().toString().!equals("peek all array"))
-            {
-                offer(poll());
-		return poll();
-            }
-        
-    }
+                                                          
+  
 
 
     /* 
