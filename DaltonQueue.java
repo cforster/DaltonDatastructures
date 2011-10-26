@@ -112,6 +112,7 @@ public class DaltonQueue extends java.util.Queue
     }
 
 
+/*
       Author: Shein
       Function: switch(x,y)
       parameters: x and y are both distances from the front of the queue
@@ -119,7 +120,16 @@ public class DaltonQueue extends java.util.Queue
     */
     void switch(int x, int y)
 	{
-	    int queue = new int[];
+	    java.util.Queue queue2 = new java.util.LinkedList();
+	    java.util.Queue queue3 = new java.util.LinkedList();
+	    int object1;
+
+	    for(int i=0; i<x; i++)
+		{
+		    queue2.offer(this.poll());
+		    
+		}
+	    
 	    this.poll
 	}
 }
