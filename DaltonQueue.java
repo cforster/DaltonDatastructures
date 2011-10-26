@@ -37,7 +37,6 @@ public class DaltonQueue extends java.util.Queue
 
 
     /*
-<<<<<<< HEAD
       Author: Isabella
      */
     
@@ -54,29 +53,28 @@ public class DaltonQueue extends java.util.Queue
 	    }
 
 	//sort the array:
-	if(queue[counter])<queue[counter--]	 
-      {
+	if(queue[counter]<queue[counter--])	 
+	    {
 	  
-      }
+	    }
 	
 
 	//return it to the queue:
-
-
-
-=======
-      Author: Katherine
-      Function: Dump (delete everything from the queue)
-     */
-    void dump()
-    {
-	while(!this.isEmpty())
-	    {
-		this.remove();
-	    } 
->>>>>>> origin/master
     }
 
+    
+	/*
+	  Author: Katherine
+	  Function: Dump (delete everything from the queue)
+	*/
+	void dump()
+	{
+	    while(!this.isEmpty())
+		{
+		    this.remove();
+		} 
+	}
+	
 
     /*
       Author: Shein
@@ -88,7 +86,4 @@ public class DaltonQueue extends java.util.Queue
 	{
 	    
 	}
-    
-
->>>>>>> origin/master
 }
