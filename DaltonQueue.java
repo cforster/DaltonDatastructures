@@ -25,15 +25,29 @@ public class DaltonQueue extends java.util.Queue
 	    }
 	System.out.println(input);
     }
+
+
+
     /*
       Author: Sophia
       Function: length
     */
     public int length()
     {
-	this
-	return front-back; 
+	offer("end of array");
+	int length =0;
+	
+	while(peek().toString().!equals("end of array")) 
+	    {
+		offer(poll());
+		length++;
+	    }
+	return length; 
     }
+
+    /*                                                                          
+                                                          
+  
 
 
     /* 
