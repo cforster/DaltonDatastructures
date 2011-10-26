@@ -74,24 +74,32 @@ public class DaltonQueue extends java.util.Queue
       Author: Katherine 
       Function: Reverse (in ABC, out CBA)
     /*
-    void reverse 
+
     {
-    
-	/*
-	  Author: Katherine
-	  Function: Dump (delete everything from the queue)
-	*/
-	void dump()
-	{
-	    while(!this.isEmpty())
-		{
-		    this.remove();
-		} 
-	}
-	
+    java.util.Stack myStack = new java.util.Stack();
+    //put everything from this into myStack
+    myStack = this.toStack();
+    this.add(myStack.pop());
 
 
     }
+
+    /*
+      Author: Katherine
+      Function: Dump (delete everything from the queue)
+    */
+
+    void dump()
+    {
+	 while(!this.isEmpty())
+	     {
+		this.remove();
+	     } 
+    }
+	
+
+
+    
 
 
       Author: Shein
