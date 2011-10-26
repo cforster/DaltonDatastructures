@@ -13,7 +13,7 @@ Sophia Edelstein
 public class DaltonQueue extends java.util.Queue
 {
     /*
-      Author: annelise and derek
+      Author: annelise
      */
     Object  peek()
     {
@@ -57,11 +57,35 @@ public class DaltonQueue extends java.util.Queue
 	Array[index] = new;
     }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/master
     /*
-      delete everything from the queue:
+      Author: Katherine
+      Function: Dump (delete everything from the queue)
      */
     void dump()
     {
-	this.remove.......
+	while(!this.isEmpty())
+	    {
+		this.remove();
+	    } 
     }
+
+
+    /*
+      Author: Shein
+      Function: switch(x,y)
+      parameters: x and y are both distances from the front of the queue
+      return: nothing
+    */
+    void switch(int x, int y)
+	{
+	    
+	}
+    
+
+>>>>>>> origin/master
 }
