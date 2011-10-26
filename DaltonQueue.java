@@ -12,24 +12,42 @@ Sophia Edelstein
 
 public class DaltonQueue extends java.util.Queue
 {
-    public string peek_all()
+    /*
+      Author: Malina
+      Function: peek_all
+      /*
+    public String peek_all()
     {
 	String input="";
 	for (i=front; i<back; i++)
 	    {
-		input=input+ ", " + Array[index];
+		input=input ", " + Array[index];
 	    }
-	System.out.println(input);
+	return input;
     }
+
+
+
     /*
       Author: Sophia
       Function: length
     */
     public int length()
     {
-	this
-	return front-back; 
+	offer("end of array");
+	int length =0;
+	
+	while(peek().toString().!equals("end of array")) 
+	    {
+		offer(poll());
+		length++;
+	    }
+	return length; 
     }
+
+    /*                                                                          
+                                                          
+  
 
 
     /* 
@@ -109,6 +127,7 @@ public class DaltonQueue extends java.util.Queue
     */
     void switch(int x, int y)
 	{
-	    
+	    int queue = new int[];
+	    this.poll
 	}
 }
