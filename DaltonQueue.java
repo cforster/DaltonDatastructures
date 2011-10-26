@@ -37,6 +37,7 @@ public class DaltonQueue extends java.util.Queue
 
 
     /*
+<<<<<<< HEAD
       Author: Isabella
      */
     
@@ -63,5 +64,31 @@ public class DaltonQueue extends java.util.Queue
 
 
 
+=======
+      Author: Katherine
+      Function: Dump (delete everything from the queue)
+     */
+    void dump()
+    {
+	while(!this.isEmpty())
+	    {
+		this.remove();
+	    } 
+>>>>>>> origin/master
     }
+
+
+    /*
+      Author: Shein
+      Function: switch(x,y)
+      parameters: x and y are both distances from the front of the queue
+      return: nothing
+    */
+    void switch(int x, int y)
+	{
+	    
+	}
+    
+
+>>>>>>> origin/master
 }
