@@ -12,7 +12,15 @@ Sophia Edelstein
 
 public class DaltonQueue extends java.util.Queue
 {
-    
+    public string peek_all()
+    {
+	String input="";
+	for (i=front; i<back; i++)
+	    {
+		input=input+ ", " + Array[index];
+	    }
+	System.out.println(input);
+    }
     /*
       Author: Sophia
       Function: length
