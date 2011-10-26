@@ -12,6 +12,7 @@ Sophia Edelstein
 
 public class DaltonQueue extends java.util.Queue
 {
+<<<<<<< HEAD
     /*
       Author: annelise
      */
@@ -27,7 +28,7 @@ public class DaltonQueue extends java.util.Queue
 	//poll each item, and offer it to the bottom of the array until we ar at A
 	this.offer("Annelise");
 
-	//this doesn't work yet:
+	//move the objects up until we detect annelise at the end of the array and we know that the first is back up to the top
 	Object move;
 	do {
 	    move=this.poll();
@@ -36,6 +37,17 @@ public class DaltonQueue extends java.util.Queue
 	return top;
     }
     
+=======
+    public string peek_all()
+    {
+	String input="";
+	for (i=front; i<back; i++)
+	    {
+		input=input+ ", " + Array[index];
+	    }
+	System.out.println(input);
+    }
+>>>>>>> origin/master
     /*
       Author: Sophia
       Function: length
@@ -63,19 +75,55 @@ public class DaltonQueue extends java.util.Queue
 
 >>>>>>> origin/master
     /*
-      Author: Katherine
-      Function: Dump (delete everything from the queue)
+      Author: Isabella
      */
-    void dump()
+    
+
+    //in progress
+    void sort()
     {
-	while(!this.isEmpty())
+	//make the queue into the array:
+	Object[] queue = new Object[queue.size()]; 
+	int counter = 0;
+	while (!this.isEmpty()) //go through the queue
 	    {
-		this.remove();
-	    } 
+		queue[counter]= this.poll();
+	    }
+
+	//sort the array:
+	if(queue[counter]<queue[counter--])	 
+	    {
+	  
+	    }
+	
+
+	//return it to the queue:
+    }
+
+    /*
+      Author: Katherine 
+      Function: Reverse (in ABC, out CBA)
+    /*
+    void reverse 
+    {
+    
+	/*
+	  Author: Katherine
+	  Function: Dump (delete everything from the queue)
+	*/
+	void dump()
+	{
+	    while(!this.isEmpty())
+		{
+		    this.remove();
+		} 
+	}
+	
+
+
     }
 
 
-    /*
       Author: Shein
       Function: switch(x,y)
       parameters: x and y are both distances from the front of the queue
@@ -85,7 +133,4 @@ public class DaltonQueue extends java.util.Queue
 	{
 	    
 	}
-    
-
->>>>>>> origin/master
 }
