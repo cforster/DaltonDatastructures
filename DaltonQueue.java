@@ -21,6 +21,9 @@ public class DaltonQueue extends java.util.Queue
 	    }
 	System.out.println(input);
     }
+
+
+
     /*
       Author: Sophia
       Function: length
