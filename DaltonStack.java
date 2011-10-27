@@ -30,6 +30,15 @@ public class DaltonStack extends java.util.Stack
 	this.pop();
     }
 
-
-
+    /*
+      Function: ClearAll
+      Description: Clears the Stack
+      Author: Xander Chase
+      Input:Nothing 
+      Output:Nothing
+    */
+    public void clearAll()
+    {
+	
+    }
 }
