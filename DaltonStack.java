@@ -20,6 +20,16 @@
 
 
 
+/*
+DONE:
+- Length
+- Reverse
+- Clear All
+*/
+
+
+
+
 public class DaltonStack extends java.util.Stack
 {
 
