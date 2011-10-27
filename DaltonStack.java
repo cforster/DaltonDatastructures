@@ -88,7 +88,12 @@ public class DaltonStack extends java.util.Stack
     */
     public void clearAll()
     {
-	
+	int x = 0;
+	while (x<this.size)
+	    {
+		this.pop();
+		x++:
+	    }
     }
     /*
       Function: DelOne
