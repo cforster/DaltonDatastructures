@@ -80,6 +80,17 @@ public class DaltonStack extends java.util.Stack
     }
 
     /*
+      Function: ClearAll
+      Description: Clears the Stack
+      Author: Xander Chase
+      Input:Nothing 
+      Output:Nothing
+    */
+    public void clearAll()
+    {
+	
+    }
+    /*
       Function: DelOne
       description: Deletes an item from anywhere in the stack & replaces all that were above it
       Authors: Josh Kaye and Michael Zhao
