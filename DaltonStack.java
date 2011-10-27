@@ -35,6 +35,16 @@ public class DaltonStack extends java.util.Stack
 	this.pop();
     }
 
+    /* Function: shows length of stack
+       Description: Pops everything out of the stack onto a new stack, counting the items, and returns them to the original stack
+       Author: Maya Klabin
+       Input: The stack 
+       Output: The number of items in the stack
+       Notes: 
+     */
 
+public 
+
+    
 
 }
