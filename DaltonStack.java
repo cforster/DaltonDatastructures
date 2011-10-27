@@ -16,7 +16,7 @@
  Michael Zhao
 
 
- /*delete all(Xander), substack(jeff, alex), convert(), delete one(michael, josh), reverse (taylor, harry), frequency(emily), length/size (maya/dubin)*/
+ /*delete all(Xander), substack(jeff, alex), convert(), delete one(michael, josh), reverse (taylor, harry), frequency(emily), length/size (maya/dubin)/
 
 
 
@@ -25,6 +25,7 @@ DONE:
 - Length
 - Reverse
 - Clear All
+-Convert
 */
 
 
@@ -54,9 +55,14 @@ public class DaltonStack extends java.util.Stack
     /*create a top stack, create the substack (it would be backward-->need to reverse) put the removed items back on the original stack, return the substack.
      */
     }
-
-
-    public void reverse()
+/*                                                                                                                                                            
+Function: reveress the order of the stack                                                                                                                  
+Description: reverses the order of the stack                                                           
+Author: Harry DiPrinizio & Taylor Wright                                                                                                                     
+Output: A stack w/ the contents reversed                                                                                                                  
+Input: a Stack                                                                                                                                               
+*/
+  public void reverse()
     {
 	java.util.Queue<Object> myQueue = new java.util.LinkedList<Object>();
 
@@ -72,6 +78,25 @@ public class DaltonStack extends java.util.Stack
 	    {
 		this.push(myQueue.remove());
 	    }
+
+    }
+
+/*
+Function: converts the Stack to a Queue
+Description: Makes it so that the last item into the stack will be the first item out of the queue.
+Author: Harry DiPrinizio & Taylor Wright
+Output: a Queue w/ the contents of the stack
+Input: a Stack 
+*/
+    public void  convert()
+    {
+	java.util.Queue<Object> myQueue = new java.util.LinkedList<Object>();
+
+        //pop the stack into a queue (until it is empty):                                                                                                     
+        while(!this.isEmpty())
+            {
+                myQueue.add(this.pop());
+            }
 
     }
 
