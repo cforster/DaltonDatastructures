@@ -90,23 +90,11 @@ public class DaltonStack extends java.util.Stack
     public void deleteOne(int blah)
     {
 <<<<<<< HEAD
-    Stack mzstack = new Stack;
-    int [] popped = new int[mzstack.length]; 
+
+
+  int [] popped = new int[mzstack.length]; 
     
-=======
-
-    
-    while (found==false)
-    {
-    for(int i=0; i<stack.length; i++)
-    {
-    if (Stack.peek==blah;    found = true;
-    else found = false;
-    }
-
-
-    }
-
+    for (int i=0; i<
 >>>>>>> origin/master
     }
 
