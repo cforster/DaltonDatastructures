@@ -20,6 +20,16 @@
 
 
 
+/*
+DONE:
+- Length
+- Reverse
+- Clear All
+*/
+
+
+
+
 public class DaltonStack extends java.util.Stack
 {
 
@@ -79,34 +89,46 @@ public void deleteTop()
     this.pop();
 }
 
-/* Function: shows length of stack
-   Description: Pops everything out of the stack onto a new stack, counting the items, and returns them to the original stack
-   Author: Maya Klabin
-   Input: The stack 
-   Output: The number of items in the stack
-   Notes: 
-*/
-/*
-  Function: ClearAll
-  Description: Clears the Stack
-  Author: Xander Chase
-  Input:Nothing 
-  Output:Nothing
-*/
-public void clearAll()
+    /* Function: shows length of stack
+       Description: Pops everything out of the stack onto a new stack, counting the items, and returns them to the original stack
+       Author: Maya Klabin
+       Input: The stack 
+       Output: The number of items in the stack
+       Notes: 
+     */
+    
+public int length()
 {
-	
+    return this.size();
 }
+
 /*
-  Function: DelOne
-  description: Deletes an item from anywhere in the stack & replaces all that were above it
-  Authors: Josh Kaye and Michael Zhao
-  Input: Desired item to delete
-  Output: none
-  Notes: none
-*/
-public void deleteOne(int blah)
-{//method
+      Function: ClearAll
+      Description: Clears the Stack
+      Author: Xander Chase
+      Input:Nothing 
+      Output:Nothing
+    */
+    public void clearAll()
+    {
+	int x = 0;
+	while (x<this.length)
+	    {
+		this.pop();
+		x++:
+	    }//ends while
+    }//ends clear all
+    /*
+      Function: DelOne
+      description: Deletes an item from anywhere in the stack & replaces all that were above it
+      Authors: Josh Kaye and Michael Zhao
+      Input: Desired item to delete
+      Output: none
+      Notes: none
+    */
+    public void deleteOne(int blah)
+    {
+<<<<<<< HEAD
 
 
     int [] popped = new int[mzstack.length]; 
