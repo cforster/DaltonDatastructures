@@ -102,12 +102,12 @@ public int length()
     public void clearAll()
     {
 	int x = 0;
-	while (x<this.size)
+	while (x<this.length)
 	    {
 		this.pop();
 		x++:
-	    }
-    }
+	    }//ends while
+    }//ends clear all
     /*
       Function: DelOne
       description: Deletes an item from anywhere in the stack & replaces all that were above it
