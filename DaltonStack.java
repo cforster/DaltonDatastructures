@@ -128,24 +128,25 @@ public int length()
     */
     public void deleteOne(int blah)
     {
-<<<<<<< HEAD
 
-
-    int [] popped = new int[mzstack.length]; 
+	java.util.Stack popped = new java.util.Stack();
     
     for (int i=0; i<this.size(); i++;)
 	{//for
 	    if (this[i]!=blah)
 		{//if
-		    mzstack.push(this[i]);
+		    popped.push(this[i]);
 		    this.pop();
 		}//if
 	    else 
 		{//else
 		    this.pop();
-		    while (mzstack.empty()==false)
-		      
-			}//else
+		    for (int j=0; j<popped.size; j++;)
+			{//for
+			    
+
+			}//for
+	       	}//else
 	}//for
 
 }//method
