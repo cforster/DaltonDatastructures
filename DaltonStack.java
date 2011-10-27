@@ -43,6 +43,27 @@ public class DaltonStack extends java.util.Stack
     */
     /*create a top stack, create the substack (it would be backward-->need to reverse) put the removed items back on the original stack, return the substack.
      */
+    /*
+int[] topstack = new int[this.length-j];
+//Makes the top stack
+for (int c=j; c<this.length; c++)
+{
+this.pop()=a;
+push(topstack a);
+}
+//Makes the substack:
+for (int c=i; c<j; c++)
+{
+    this.pop()=a;
+    push(substack a);
+    sustack.reverse;
+
+
+
+}
+
+
+     */
     }
 
 
