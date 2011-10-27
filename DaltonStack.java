@@ -92,7 +92,7 @@ public class DaltonStack extends java.util.Stack
     /* Function: shows length of stack
        Description: Pops everything out of the stack onto a new stack, counting the items, and returns them to the original stack
        Author: Maya Klabin
-       Input: The stack 
+       Input: Nothing 
        Output: The number of items in the stack
        Notes: 
      */
@@ -109,6 +109,41 @@ public int length()
       Input:Nothing 
       Output:Nothing
     */
+
+
+
+/*
+Fuction: Randomize
+Description: Changes the order randomly
+Author: Maya Klabin
+Input: Nothing
+Output: Nothing
+
+*/
+public void randomize()
+{
+
+ 	List list = new ArrayList();
+
+	
+	while length() > 0
+			{
+
+			    ArrayList.add(stack.pop());
+			    
+			}
+
+Collections.shuffle(list);
+
+while (!list.isEmpty())
+    {
+	this.push(list.get(0))
+	    } 
+
+Return
+}
+
+
     public void clearAll()
     {
 	int x = 0;
