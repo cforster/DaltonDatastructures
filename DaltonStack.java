@@ -86,7 +86,13 @@ public class DaltonStack extends java.util.Stack
        Output: The number of items in the stack
        Notes: 
      */
-    /*
+    
+public int length()
+{
+    return this.size();
+}
+
+/*
       Function: ClearAll
       Description: Clears the Stack
       Author: Xander Chase
