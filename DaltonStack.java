@@ -79,7 +79,20 @@ public class DaltonStack extends java.util.Stack
 	this.pop();
     }
 
-    /*
+    /* Function: shows length of stack
+       Description: Pops everything out of the stack onto a new stack, counting the items, and returns them to the original stack
+       Author: Maya Klabin
+       Input: The stack 
+       Output: The number of items in the stack
+       Notes: 
+     */
+    
+public int length()
+{
+    return this.size();
+}
+
+/*
       Function: ClearAll
       Description: Clears the Stack
       Author: Xander Chase
@@ -102,27 +115,15 @@ public class DaltonStack extends java.util.Stack
       Input: Desired item to delete
       Output: none
       Notes: none
-
+    */
     public void deleteOne(int blah)
     {
 <<<<<<< HEAD
-    Stack mzstack = new Stack;
-    int [] popped = new int[mzstack.length]; 
+
+
+  int [] popped = new int[mzstack.length]; 
     
-=======
-
-    
-    while (found==false)
-    {
-    for(int i=0; i<stack.length; i++)
-    {
-    if (Stack.peek==blah;    found = true;
-    else found = false;
-    }
-
-
-    }
-
+    for (int i=0; i<
 >>>>>>> origin/master
     }
 
