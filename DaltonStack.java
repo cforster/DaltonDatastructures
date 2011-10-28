@@ -1,37 +1,39 @@
-/*
-  This is the Dalton Stack assignment for the CSA class
-
-  Authors:
-  Xander Chase
-  Charles Forster
-  Jeffrey Stern
-  Emily Lovett
-  Jeffrey Stern
-  Taylor Wright
-  Harry DiPirinzio
-  Josh Kaye
-  Alex Mayer
-  Maya Klabin
-  Michael Dubin
-  Michael Zhao
-
-
-  /*delete all(Xander), substack(jeff, alex), convert(), delete one(michael, josh), reverse (taylor, harry), frequency(emily), length/size (maya/dubin)*/
-
-
+import java.util.ArrayList;
 
 /*
-DONE:
-- Length
-- Reverse
-- Clear All
--Convert
+   This is the Dalton Stack assignment for the CSA class
+
+   Authors:
+   Xander Chase
+   Charles Forster
+   Jeffrey Stern
+   Emily Lovett
+   Jeffrey Stern
+   Taylor Wright
+   Harry DiPirinzio
+   Josh Kaye
+   Alex Mayer
+   Maya Klabin
+   Michael Dubin
+   Michael Zhao
+
+
+   /*delete all(Xander), substack(jeff, alex), convert(), delete one(michael, josh), reverse (taylor, harry), frequency(emily), length/size (maya/dubin)*/
+
+
+
+/*
+  DONE:
+  - Length
+  - Reverse
+  - Clear All
+  -Convert
 */
 
 
 
 
-public class DaltonStack extends java.util.Stack
+    public class DaltonStack extends java.util.Stack
 {
 
    
@@ -54,40 +56,40 @@ public class DaltonStack extends java.util.Stack
     */
     /*create a top stack, create the substack (it would be backward-->need to reverse) put the removed items back on the original stack, return the substack.
      */
-    }
-/*                                                                                                                                                            
-Function: reveress the order of the stack                                                                                                                  
-Description: reverses the order of the stack                                                           
-Author: Harry DiPrinizio & Taylor Wright                                                                                                                     
-Output: A stack w/ the contents reversed                                                                                                                  
-Input: a Stack                                                                                                                                               
-*/
-  public void reverse()
+    //}
+    /*                                                                                                                                                            
+																				  Function: reveress the order of the stack                                                                                                                  
+																				  Description: reverses the order of the stack                                                           
+																				  Author: Harry DiPrinizio & Taylor Wright                                                                                                                     
+																				  Output: A stack w/ the contents reversed                                                                                                                  
+																				  Input: a Stack                                                                                                                                               
+    */
+    public void reverse()
     {
 	java.util.Queue<Object> myQueue = new java.util.LinkedList<Object>();
 
-    //pop the stack into a queue (until it is empty):
-    while(!this.isEmpty())
-	{
-	    myQueue.add(this.pop());
-	}
+	//pop the stack into a queue (until it is empty):
+	while(!this.isEmpty())
+	    {
+		myQueue.add(this.pop());
+	    }
 
-    //get the queue into the stack
+	//get the queue into the stack
 
-    while(! myQueue.isEmpty())
-	{
-	    this.push(myQueue.remove());
-	}
+	while(! myQueue.isEmpty())
+	    {
+		this.push(myQueue.remove());
+	    }
 
-}
+    }
 
-/*
-Function: converts the Stack to a Queue
-Description: Makes it so that the last item into the stack will be the first item out of the queue.
-Author: Harry DiPrinizio & Taylor Wright
-Output: a Queue w/ the contents of the stack
-Input: a Stack 
-*/
+    /*
+      Function: converts the Stack to a Queue
+      Description: Makes it so that the last item into the stack will be the first item out of the queue.
+      Author: Harry DiPrinizio & Taylor Wright
+      Output: a Queue w/ the contents of the stack
+      Input: a Stack 
+    */
     public void  convert()
     {
 	java.util.Queue<Object> myQueue = new java.util.LinkedList<Object>();
@@ -101,7 +103,7 @@ Input: a Stack
     }
 
 
- /*
+    /*
       Function: deleteTop
       description:  pops the top item and doesn't return it.
       Author: Charlie Forster
@@ -120,14 +122,14 @@ Input: a Stack
        Input: Nothing 
        Output: The number of items in the stack
        Notes: 
-     */
+    */
     
-public int length()
-{
-    return this.size();
-}
+    public int length()
+    {
+	return this.size();
+    }
 
-/*
+    /*
       Function: ClearAll
       Description: Clears the Stack
       Author: Xander Chase
@@ -137,45 +139,45 @@ public int length()
 
 
 
-/*
-Fuction: Randomize
-Description: Changes the order randomly
-Author: Maya Klabin
-Input: Nothing
-Output: Nothing
+    /*
+      Fuction: Randomize
+      Description: Changes the order randomly
+      Author: Maya Klabin
+      Input: Nothing
+      Output: Nothing
 
-*/
-public void randomize()
-{
+    */
+    public void randomize()
+    {
 
- 	List list = new ArrayList();
+ 	ArrayList list = new ArrayList();
 
 	
-	while length() > 0
-			{
+	while (length() > 0)
+	    {
 
-			    ArrayList.add(stack.pop());
+		list.add(this.pop());
 			    
-			}
+	    }
 
-Collections.shuffle(list);
+	//Collections.shuffle(list);
 
-while (!list.isEmpty())
-    {
-	this.push(list.get(0))
+	while (!list.isEmpty())
+	    {
+		this.push(list.get(0));
 	    } 
 
-Return
-}
+
+	}
 
 
     public void clearAll()
     {
 	int x = 0;
-	while (x<this.length)
+	while (x<this.size())
 	    {
 		this.pop();
-		x++:
+		x++;
 	    }//ends while
     }//ends clear all
     /*
@@ -186,61 +188,62 @@ Return
       Output: none
       Notes: none
     */
-    public void deleteOne(int blah)
+    public void deleteOne(Object blah)
     {//method
 
 	java.util.Stack popped = new java.util.Stack();
     
-    for (int i=0; i<this.size(); i++)
-	{//for
-	    if (this[i]!=blah)
-		{//if
-		    popped.push(this[i]);
-		    this.pop();
-		}//if
-	    else 
-		{//else
-		    this.pop();
-		    for (int j=0; j<popped.size(); j++)
-			{//for
-			    this.push(popped.size()-j);
-			    popped.pop;
+	for (int i=0; i<this.size(); i++)
+	    {//for
+		if (this.peek()!=blah)
+		    {//if
+			popped.push(this.pop());
+			this.pop();
+		    }//if
+		else 
+		    {//else
+			this.pop();
+			for (int j=0; j<popped.size(); j++)
+			    {//for
+				this.push(popped.size()-j);
+				popped.pop();
 
-			}//for
-	       	}//else
-	}//for
+			    }//for
+		    }//else
+	    }//for
 
-}//method
+    }//method
 
-/*alex and emily*/
-int frequency(int number)
-{
-    int[] jesus = new int[this.size()];
-    int buddha = 0;
+    /*alex and emily*/
+    int frequency(Object number)
+    {
+	Object[] jesus = new Object[this.size()];
+	int buddha = 0;
 
-    while(this.empty() = false)
-	{
-	    for (int i = 0; i <= this.size(); int++)
-		{
-		    jesus[i] = this.pop();
-		}
+	while(this.isEmpty() == false)
+	    {
+		for (int i = 0; i <= this.size(); i++)
+		    {
+			jesus[i] = this.pop();
+		    }
 
-	}
+	    }
 
-    for (int x = 0; x<=jesus.length(); x++)
-	{
-	    if(jesus[x]=number)
-		{
-		    buddha++;
-		}
+	for (int x = 0; x<=jesus.length; x++)
+	    {
+		if(jesus[x]==number)
+		    {
+			buddha++;
+		    }
 
-	}
+	    }
 
-    //push everything back into the stack starting from the top                                                                                               
+	//push everything back into the stack starting from the top                                                                                               
+
+	return -1;
 
 
-
-}
+    }
 
 
 
