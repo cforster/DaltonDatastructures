@@ -191,7 +191,7 @@ Return
 
 	java.util.Stack popped = new java.util.Stack();
     
-    for (int i=0; i<this.size(); i++;)
+    for (int i=0; i<this.size(); i++)
 	{//for
 	    if (this[i]!=blah)
 		{//if
@@ -201,9 +201,9 @@ Return
 	    else 
 		{//else
 		    this.pop();
-		    for (int j=0; j<popped.size; j++;)
+		    for (int j=0; j<popped.size(); j++)
 			{//for
-			    this.push(popped.size-j);
+			    this.push(popped.size()-j);
 			    popped.pop;
 
 			}//for
