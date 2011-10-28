@@ -203,7 +203,8 @@ Return
 		    this.pop();
 		    for (int j=0; j<popped.size; j++;)
 			{//for
-			    
+			    this.push(popped.size-j);
+			    popped.pop;
 
 			}//for
 	       	}//else
