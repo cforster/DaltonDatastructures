@@ -34,7 +34,7 @@ import java.util.ArrayList;
 
 
     public class DaltonStack extends java.util.Stack
-{
+    {
 
    
     /*
@@ -165,7 +165,7 @@ import java.util.ArrayList;
 	while (!list.isEmpty())
 	    {
 		this.push(list.get(0));
-		list.delete(0);
+		list.remove(0);
 	    } 
 
 
