@@ -160,11 +160,12 @@ import java.util.ArrayList;
 			    
 	    }
 
-	//Collections.shuffle(list);
+	java.util.Collections.shuffle(list);
 
 	while (!list.isEmpty())
 	    {
 		this.push(list.get(0));
+		list.delete(0);
 	    } 
 
 
