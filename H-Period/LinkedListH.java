@@ -37,3 +37,26 @@ public class LinkedListH{
       	    }
 	n.setData(d);
 }//class
+
+    /* Annelise (clear fuction)*/
+
+       void clear()
+       {
+	   Node first = header.next();
+	   while (first !=header)
+	       {
+		   Node.next = first.next;
+		   first.next = first.previous = null;
+		   first = null;
+		   first = next;
+	       }
+
+	   header = header.next = header.previous;
+	   size = 0;
+      }
+
+    /*public void clear()
+      {
+          first = null;
+	  return 0;
+      }
