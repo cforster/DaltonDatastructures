@@ -58,3 +58,25 @@ public class LinkedListH{
     }
 
 }//class
+}
+
+    //Sophia
+    // isempty 
+ boolean isEmpty ()
+    {
+	if (first==null)
+	    { 
+		return true;
+	    }
+	return false;
+    }
+
+    //Sophia 
+    // contains 
+    boolean contains (Node n, double d)
+    {
+	if(n.data == d) return true;
+	else if(n.pointer==null) return false;
+	else return contains(n.pointer, d);
+    }
+//class
