@@ -1,3 +1,4 @@
+
 Sophia
 Katherine 
 Annelise
@@ -8,15 +9,15 @@ Malina
 
 
 dump -- Erase all (Katherine)
-convert -- return a stack
+convert -- return a stack-malina
 reverse- Katherine 
 sort isabella
 switch(x,y) --> jason
-search
-replaceAt(x)
-replaceAt(y)
-peek--derdertkd95/ Annelise
-peekall--Derek/ Annelise
+<<<<<<< HEAD
+search -->jason
+=======
+search- search 
+>>>>>>> origin/master
 replaceAt(x)Malina + isa
 <<<<<<< HEAD
 =======
@@ -24,4 +25,3 @@ peek--derdertkd95
 peekall-malinA
 >>>>>>> origin/master
 length Sophia 
-toString
