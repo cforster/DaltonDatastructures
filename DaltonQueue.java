@@ -5,7 +5,7 @@ Isabella Giovannini
 Jason Shein
 Katherine Odom
 Malina Buturovic
-Derek Whang
+Derek Whang -_- hohoho
 Annelise Steele <3
 Sophia Edelstein 
  */
@@ -81,8 +81,11 @@ public class DaltonQueue extends java.util.Queue
 	Array[index] = new;
     }
 
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> origin/master
     /*
       Author: Isabella
      */
@@ -115,10 +118,19 @@ public class DaltonQueue extends java.util.Queue
     /*
 
     {
-    java.util.Stack myStack = new java.util.Stack();
-    //put everything from this into myStack
-    myStack = this.toStack();
-    this.add(myStack.pop());
+    
+	/*
+	  Author: Katherine
+	  Function: Dump (delete everything from the queue)
+	*/
+	void dump()
+	{
+	    while(!this.isEmpty())
+		{
+		    this.remove();
+		} 
+	}
+	
 
 
     }
