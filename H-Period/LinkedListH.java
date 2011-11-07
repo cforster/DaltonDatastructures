@@ -36,4 +36,15 @@ public class LinkedListH{
 		set(n.getPointer(), index-1, d);
       	    }
 	n.setData(d);
-}//class
+}
+    //Sophia isempty 
+
+ boolean isEmpty ()
+    {
+	if (first==null)
+	    { 
+		return true;
+	    }
+	return false;
+    }
+//class
