@@ -18,7 +18,7 @@ import java.util.ArrayList;
    Michael Zhao
 
 
-   /*delete all(Xander), substack(jeff, alex), convert(), delete one(michael, josh), reverse (taylor, harry), frequency(emily), length/size (maya/dubin)*/
+   /*delete all(Xander), substack(jeff, alex), convert(), delete one(michael, josh), reverse (taylor, harry), frequency(emily), length/size (maya), randomize(maya/dubin)*/
 
 
 
@@ -142,7 +142,7 @@ import java.util.ArrayList;
     /*
       Fuction: Randomize
       Description: Changes the order randomly
-      Author: Maya Klabin
+      Author: Maya Klabin and Michael Dubin
       Input: Nothing
       Output: Nothing
 
