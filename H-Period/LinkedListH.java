@@ -58,3 +58,4 @@ public class LinkedListH{
 	else return contains(n.pointer, d);
     }
 //class
+}
