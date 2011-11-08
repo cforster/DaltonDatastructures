@@ -79,5 +79,20 @@ public class LinkedListH{
 	else if(n.pointer==null) return false;
 	else return contains(n.pointer, d);
     }
+
+//Isabella
+//indexOf
+int indexOf (Node n, double d, int index)
+{
+    indexOf(First, 3.0, 0);
+    if (first.data==d)
+{return index;
+}
+    else
+	return indexOf(n.pointer, d, index+1);
+
+}
+
+
 //class
 }
