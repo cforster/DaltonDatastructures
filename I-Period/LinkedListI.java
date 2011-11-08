@@ -46,4 +46,28 @@ public class LinkedListI
 	else set(index-1, data, n.pointer);
     }//set
 
+
+    /*Name: Clone
+      Function: Returns a duplicate of original LinkedList
+      Authors: Maya Klabin and Xander Chase
+    */
+
+    public Node clone(Node n)
+    {    
+	
+	if(n.pointer!=null)
+	    {
+		Node duplicate = new Node();
+		duplicate.data = n.data;
+		duplicate.pointer = clone(n.pointer);
+		return duplicate;
+	    }//if
+	else
+	    {
+		Node duplicate = new Node();
+		duplicate.pointer = null;
+		duplicate.data = n.data;
+		return duplicate;
+	    }//else
+    }//clone
 }//class
