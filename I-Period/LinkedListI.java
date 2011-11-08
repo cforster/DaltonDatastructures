@@ -49,14 +49,25 @@ public class LinkedListI
 
     public boolean isEmpty(Node n)
     {
-	if(n.pointer==null && n.data == 0) return true;
+	if(first==null) return true;
 	else return false;
 
     }//isEmpty
 
+
+
+    public void removefirst(Node n)
+    {
+	first = n.pointer;
+    }//removefirst
+
+
+    public void removelast(Node n)
+    {
+
+        if(n.pointer.pointer!= null)  removelast(n.pointer);
+          
+	else if (n.pointer.pointer == null) n.pointer = null;
+    
+    }//removelast
 }//class
-
-
-
-
-//poop
