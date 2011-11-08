@@ -1,5 +1,6 @@
 public class LinkedListH{
 
+ //Author: All of Us
     Node first; //pointer to a Node
 
     LinkedListH(){}
@@ -36,27 +37,46 @@ public class LinkedListH{
 		set(n.getPointer(), index-1, d);
       	    }
 	n.setData(d);
+    }
+
+  //Author: Katherine
+  //Function: get
+    double get(int index, Node n)
+    {
+	if (index!= 0)
+       	    {
+		if (n.pointer!= null) 
+		    {
+			get(index-1, n.pointer);
+		    }
+		else 
+		    {
+			System.out.println("out of bounds Exception!");
+		    }
+	    }
+	return n.data;
+    }
+
 }//class
+}
 
-    /* Annelise (clear fuction)*/
+    //Sophia
+    // isempty 
+ boolean isEmpty ()
+    {
+	if (first==null)
+	    { 
+		return true;
+	    }
+	return false;
+    }
 
-       void clear()
-       {
-	   Node first = header.next();
-	   while (first !=header)
-	       {
-		   Node.next = first.next;
-		   first.next = first.previous = null;
-		   first = null;
-		   first = next;
-	       }
-
-	   header = header.next = header.previous;
-	   size = 0;
-      }
-
-    /*public void clear()
-      {
-          first = null;
-	  return 0;
-      }
+    //Sophia 
+    // contains 
+    boolean contains (Node n, double d)
+    {
+	if(n.data == d) return true;
+	else if(n.pointer==null) return false;
+	else return contains(n.pointer, d);
+    }
+//class
