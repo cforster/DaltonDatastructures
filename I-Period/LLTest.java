@@ -17,6 +17,7 @@ public class LLTest
 	
 	System.out.println(mylist.get(2,mylist.first));
 	
+	
     }//main
 
 }//class

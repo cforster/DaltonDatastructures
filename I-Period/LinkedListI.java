@@ -1,5 +1,6 @@
 public class LinkedListI
 {
+    
     Node first;//is a pointer
 
     public void add(int data)
@@ -14,6 +15,20 @@ public class LinkedListI
     {
 	if(index==0)return n.data; 
 	return get(index-1,n.pointer);
+    }
+    
+    //we are 
+    public void toArray()
+    {
+	int[] one = new int[this.size(first)];
+	Node temp=first; 
+
+	for(int i=0; i<one.length; i++)
+	    {
+		one[i]=temp.data;
+		temp=temp.pointer;
+	    }
+
     }
 
 
