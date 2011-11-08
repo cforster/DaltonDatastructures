@@ -10,6 +10,12 @@ public class LinkedListI
 	first = temp;
     }//add    
 
+    public int get(int index, Node n)
+    {
+	if(index==0)return n.data; 
+	return get(index-1,n.pointer);
+    }
+
 
     public int factorial(int n)
     {

@@ -14,7 +14,8 @@ public class LLTest
 	System.out.println(mylist.factorial(5));
 
 	System.out.println(mylist.size(mylist.first));
-
+	
+	System.out.println(mylist.get(2,mylist.first));
 	
     }//main
 
