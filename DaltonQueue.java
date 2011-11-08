@@ -5,7 +5,7 @@ Isabella Giovannini
 Jason Shein
 Katherine Odom
 Malina Buturovic
-Derek Whang
+Derek Whang -_- hohoho
 Annelise Steele <3
 Sophia Edelstein 
  */
@@ -44,6 +44,27 @@ public class DaltonQueue extends java.util.Queue
 	    }
 	return length; 
     }
+    /*
+      AUthor: Sophia 
+      Function: Search
+    */
+    public int search(Object o) 
+    { 
+	offer("end of array");
+	int where = 0;
+	
+        while(!peek().toString().equals("end of array"))
+	    {
+		if(!peek().toString().equals(o))	
+		    {
+			return where;
+		    }
+		offer(poll());
+		where++;
+	    }  
+	return -1; 
+    }
+    
 
     /*                                                                          
                                                           
@@ -60,8 +81,11 @@ public class DaltonQueue extends java.util.Queue
 	Array[index] = new;
     }
 
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> origin/master
     /*
       Author: Isabella
      */
@@ -98,7 +122,7 @@ public class DaltonQueue extends java.util.Queue
       Author: Katherine 
       Function: Reverse (in ABC, out CBA)
     /*
-    void reverse 
+
     {
     
 	/*
@@ -117,7 +141,25 @@ public class DaltonQueue extends java.util.Queue
 
     }
 
+    /*
+      Author: Katherine
+      Function: Dump (delete everything from the queue)
+    */
 
+    void dump()
+    {
+	 while(!this.isEmpty())
+	     {
+		this.remove();
+	     } 
+    }
+	
+
+
+    
+
+
+/*
       Author: Shein
       Function: switch(x,y)
       parameters: x and y are both distances from the front of the queue
@@ -125,6 +167,16 @@ public class DaltonQueue extends java.util.Queue
     */
     void switch(int x, int y)
 	{
+	    java.util.Queue queue2 = new java.util.LinkedList();
+	    java.util.Queue queue3 = new java.util.LinkedList();
+	    int object1;
+
+	    for(int i=0; i<x; i++)
+		{
+		    queue2.offer(this.poll());
+		    
+		}
 	    
+	    this.poll
 	}
 }

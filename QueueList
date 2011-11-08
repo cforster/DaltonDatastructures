@@ -13,8 +13,15 @@ convert -- return a stack-malina
 reverse- Katherine 
 sort isabella
 switch(x,y) --> jason
+<<<<<<< HEAD
+search -->jason
+=======
 search- search 
+>>>>>>> origin/master
 replaceAt(x)Malina + isa
+<<<<<<< HEAD
+=======
 peek--derdertkd95
 peekall-malinA
+>>>>>>> origin/master
 length Sophia 
