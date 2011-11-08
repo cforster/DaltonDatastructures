@@ -19,7 +19,7 @@ boolean remove
 boolean removeAll
 retainAll
 set-->Jason
-size()
+size()--> Katherine
 subList
 toArray()
 toArray(T[] a)
