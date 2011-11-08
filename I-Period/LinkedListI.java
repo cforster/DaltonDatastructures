@@ -60,4 +60,25 @@ public class LinkedListI
 	else if (n.pointer.pointer == null) n.pointer = null;
     
     }//removelast
+
+    //By Michael Zhao
+    public boolean retain(int keep, Node n)
+    {// Retains only the elements in this list that are contained in the specified collection (optional operation). 
+	// In other words, removes from this list all the elements that are not contained in the specified collection.
+	if(n.pointer!=null)
+	    {
+		if(n.data!=keep)
+		    {
+			//delete this item
+			n.pointer = n.pointer.pointer;
+			retain(keep, n.pointer.pointer);
+		    }
+		else
+		    {
+			//keep this item
+			retain(keep, n.pointer);
+		    }
+
+	    }	
+    //By Michael Zhao 
 }//class

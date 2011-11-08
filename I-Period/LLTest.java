@@ -15,6 +15,10 @@ public class LLTest
 
 	System.out.println(mylist.size(mylist.first));
 
+
+	//By MZ
+	mylist.retain(2, mylist.first);
+	//By MZ
 	
     }//main
 
