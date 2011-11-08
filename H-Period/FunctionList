@@ -8,7 +8,7 @@ boolean containsAll
 boolean equals
 get--> Katherine
 int hashCode()
-int indexOf
+int indexOf--> Isabella
 boolean isEmpty()-->Sophia
 iterator()
 int lastIndexOf
