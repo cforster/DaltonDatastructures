@@ -46,7 +46,21 @@ public class LinkedListI
 	else set(index-1, data, n.pointer);
     }//set
 
+    public void removefirst(Node n)
+    {
+	first = n.pointer;
+    }//removefirst
 
+
+    public void removelast(Node n)
+    {
+
+        if(n.pointer.pointer!= null)  removelast(n.pointer);
+          
+	else if (n.pointer.pointer == null) n.pointer = null;
+    
+    }//removelast
+}//class
     /*Name: Clone
       Function: Returns a duplicate of original LinkedList
       Authors: Maya Klabin and Xander Chase
