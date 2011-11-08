@@ -40,24 +40,54 @@ public class LinkedListI
 	return 1;
     }//size
 
-    public void set(int index, int data, Node n)
+
+   public void set(int index, int data, Node n)
     {
 	if(index==0) n.data=data;
 	else set(index-1, data, n.pointer);
     }//set
+
+
+/**
+       Authors: Emily Lovett and Alex Mayer
+       Input: Node n
+       Output: nothing
+       Function: Removes the first node in the linked list by setting "first" to the second one.
+     **/
 
     public void removefirst(Node n)
     {
 	first = n.pointer;
     }//removefirst
 
+/**
+       Authors: Emily Lovett and Alex Mayer
+       Input: Node n
+       Output: nothing
+       Function: Removes the last node in the linkedlist by setting the second to last node's pointer to null. 
+     **/
 
     public void removelast(Node n)
     {
-
         if(n.pointer.pointer!= null)  removelast(n.pointer);
           
-	else if (n.pointer.pointer == null) n.pointer = null;
-    
+	else if (n.pointer.pointer == null) n.pointer = null;    
     }//removelast
+
+
+    /**
+       Authors: Emily Lovett and Alex Mayer
+       Input: index, node n
+       Output: nothing
+       Function: Can remove any node in the linkedlist, also can remove first and last ones.
+
+     **/
+    public void remove(int index, Node n)
+    {
+        if(index==1) n.pointer = n.pointer.pointer;
+	
+	else if(index==0) removefirst(n);
+
+        else remove(index-1, n.pointer);
+    }//set  
 }//class
