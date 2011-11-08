@@ -2,11 +2,11 @@ boolean add
 void add
 boolean addAll
 boolean addAll (int index,)
-void clear()-->annelise
-boolean contains
+void clear()--> annelise
+boolean contains--> Sophia
 boolean containsAll
 boolean equals
-get-->Katherine
+get--> Katherine
 int hashCode()
 int indexOf
 boolean isEmpty()-->Sophia
@@ -18,8 +18,8 @@ remove(int index)
 boolean remove
 boolean removeAll
 retainAll
-set-->Jason
-size()
+set--> All of us
+size()--> All of us
 subList
-toArray()
+toArray() --> Katherine
 toArray(T[] a)

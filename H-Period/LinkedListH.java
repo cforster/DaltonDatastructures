@@ -1,5 +1,6 @@
 public class LinkedListH{
 
+ //Author: All of Us
     Node first; //pointer to a Node
 
     LinkedListH(){}
@@ -36,6 +37,27 @@ public class LinkedListH{
 		set(n.getPointer(), index-1, d);
       	    }
 	n.setData(d);
+    }
+
+  //Author: Katherine
+  //Function: get
+    double get(int index, Node n)
+    {
+	if (index!= 0)
+       	    {
+		if (n.pointer!= null) 
+		    {
+			get(index-1, n.pointer);
+		    }
+		else 
+		    {
+			System.out.println("out of bounds Exception!");
+		    }
+	    }
+	return n.data;
+    }
+
+}//class
 }
 
     //Sophia
