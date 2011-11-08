@@ -2,7 +2,10 @@ public class LLTest
 {
     public static void main(String[] args)
     {
+
 	LinkedListI mylist = new LinkedListI();
+	mylist.isEmpty(mylist.first);
+
 	mylist.add(1);
 	mylist.add(2);
 	mylist.add(3);
@@ -14,6 +17,8 @@ public class LLTest
 	System.out.println(mylist.factorial(5));
 
 	System.out.println(mylist.size(mylist.first));
+
+	mylist.isEmpty(mylist.first);
 
 	
     }//main

@@ -16,7 +16,7 @@ public class LinkedListI
 	if(n==1) return 1;
 	return n*factorial(n-1);
 
-    }
+    }//factorial
 
     public void print(Node n)
     {
@@ -46,4 +46,17 @@ public class LinkedListI
 	else set(index-1, data, n.pointer);
     }//set
 
+
+    public boolean isEmpty(Node n)
+    {
+	if(n.pointer==null && n.data == 0) return true;
+	else return false;
+
+    }//isEmpty
+
 }//class
+
+
+
+
+//poop
