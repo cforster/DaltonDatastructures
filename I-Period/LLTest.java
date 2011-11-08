@@ -21,6 +21,8 @@ public class LLTest
 	System.out.println(mylist.isEmpty(mylist.first));
 
 	
+	mylist.print(mylist.clone(mylist.first));
+	
     }//main
 
 }//class
