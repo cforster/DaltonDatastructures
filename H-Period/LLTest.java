@@ -11,6 +11,7 @@ public class LLTest
 <<<<<<< HEAD
 	System.out.println(myList.isEmpty());
 	System.out.println(myList.contains(myList.first, 4.0));
+	myList.removeFirst(); 
 =======
 
 
