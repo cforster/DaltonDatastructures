@@ -1,6 +1,8 @@
+import java.util.Arrays;
 public class LLTest
 {
-    public static void main(String[] args)
+    public static void main (String[] args)
+    
     {
 	LinkedListI mylist = new LinkedListI();
 
@@ -18,17 +20,12 @@ public class LLTest
 
 	System.out.println(mylist.size(mylist.first));
 
-<<<<<<< HEAD
-
-	//By MZ
-	mylist.retain(2, mylist.first);
-	//By MZ
-=======
-	System.out.println(mylist.isEmpty(mylist.first));
-
+	int[] arraytest = mylist.toarray();
+	System.out.println("to array test");
+	System.out.println(Arrays.toString(arraytest));
 	
-	mylist.print(mylist.clone(mylist.first));
->>>>>>> origin/master
+	//mylist.print(mylist.clone(mylist.first));
+
 	
     }//main
 

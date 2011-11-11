@@ -151,6 +151,33 @@ public class LinkedListI
     }//clone
 
 
+
+    /*
+      Name: toarray
+      Function: converts a linkedlist into an array
+      Authors: Maya Klabin
+      Input: nothing
+      Output: an array
+     */
+
+    public int[] toarray()
+    {
+	Node temp = first;
+	int[] newarray = new int[size(first)];
+	for(int i =0; i< newarray.length; i++)
+	    {
+		newarray[i] = temp.data;
+		temp = temp.pointer;
+	    }
+	return newarray;
+
+    }
+
+
+
+
+
+
     /*Name: Randomize the clone
       Function: Returns a duplicated, randomized linkedlist
       Authors: Maya Klabin and Xander Chase
@@ -158,22 +185,12 @@ public class LinkedListI
       Output: New Randomized form of the original list
      */
 
-    public Node randomizeclone(Node n)
-    {
-	this.add(1);
-	if(n.pointer!=null)
-	    {
-		Node duplicate = new Node();
-		duplicate.data = n.data;
-		duplicate.pointer = randomizeclone(n.pointer);
-		return duplicate;
-	    }
+    //    public int shuffle(Node n)
+    //{
 	
-
-	return null;
-
-
-    }//randomize
+	
+	
+// }//shuffle
 
 }//class
-
+   
