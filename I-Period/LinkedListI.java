@@ -1,5 +1,6 @@
 public class LinkedListI
 {
+    
     Node first;//is a pointer
 
     public void add(int data)
@@ -9,6 +10,38 @@ public class LinkedListI
 	temp.data = data;
 	first = temp;
     }//add    
+    /*  
+     Authors: Taylor Wright and Harrison DiPirinzio
+     Input: Index and Node
+     Output: Int
+    Function: Takes a node and pritns the data from that node
+    */
+
+    public int get(int index, Node n)
+    {
+	if(index==0)return n.data; 
+	return get(index-1,n.pointer);
+    }//get
+
+    /*
+    Authors: Taylor Wright and Harrison DiPirinzio
+    Input: Null
+    Output: Null
+    Function: Converts Linked List to an Array
+    */
+
+    public void toArray()
+    {
+	int[] one = new int[this.size(first)];
+	Node temp=first; 
+
+	for(int i=0; i<one.length; i++)
+	    {
+		one[i]=temp.data;
+		temp=temp.pointer;
+	    }//for loop
+
+    }//toArray
 
 
     public int factorial(int n)
