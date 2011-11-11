@@ -67,7 +67,7 @@ public class LinkedListI
 
     public void removefirst(Node n)
     {
-	first = n.pointer;
+	first = n.pointer; //makes first point to the second node
     }//removefirst
 
 /**
@@ -81,7 +81,7 @@ public class LinkedListI
     {
         if(n.pointer.pointer!= null)  removelast(n.pointer);
           
-	else if (n.pointer.pointer == null) n.pointer = null;    
+	else if (n.pointer.pointer == null) n.pointer = null; //sets second to last node's pointer as null    
     }//removelast
 
 
@@ -94,17 +94,17 @@ public class LinkedListI
      **/
     public void remove(int index, Node n)
     {
-        if(index==1) n.pointer = n.pointer.pointer;
+        if(index==1) n.pointer = n.pointer.pointer; //when the index is 1 (index increments down every time you run), sets n.pointer to n.pointer.pointer to skip over the node 
 	
-	else if(index==0) removefirst(n);
+	else if(index==0) removefirst(n); //to remove the first node... sends it to removefirst
 
-        else remove(index-1, n.pointer);
+        else remove(index-1, n.pointer); //when index isn't 1 (so when it's not BEFORE the node you want to remove), it runs the function again, removing one and moving to the next node
     }//set  
 
-    /*Name: Clone
+    /**Name: Clone
       Function: Returns a duplicate of original LinkedList
       Authors: Maya Klabin and Xander Chase
-    */
+    **/
 
     public Node clone(Node n)
     {    
