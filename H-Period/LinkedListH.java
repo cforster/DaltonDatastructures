@@ -57,8 +57,7 @@ public class LinkedListH{
 	return n.data;
     }
 
-}//class
-}
+
 
     //Sophia
     // isempty 
