@@ -7,8 +7,8 @@ public class LLTest
 	myList.addfirst(4);
 	myList.addfirst(5);
 	myList.print(myList.first);
+	myList.clear(myList.first);
 	System.out.println(myList.size(myList.first));
-
 
 	myList.get(1, myList.first);
 
