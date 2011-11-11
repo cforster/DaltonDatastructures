@@ -58,11 +58,11 @@ import java.util.ArrayList;
      */
     //}
     /*                                                                                                                                                            
-																				  Function: reveress the order of the stack                                                                                                                  
-																				  Description: reverses the order of the stack                                                           
-																				  Author: Harry DiPrinizio & Taylor Wright                                                                                                                     
-																				  Output: A stack w/ the contents reversed                                                                                                                  
-																				  Input: a Stack                                                                                                                                               
+																				   Function: reveress the order of the stack                                                                                                                  
+																			 	   Description: reverses the order of the stack                                                           
+																				   Author: Harry DiPrinizio & Taylor Wright                                                                                                                     
+																				   Output: A stack w/ the contents reversed                                                                                                                  
+																				   Input: a Stack                                                                                                                                               
     */
     public void reverse()
     {
@@ -120,14 +120,12 @@ import java.util.ArrayList;
        Description: Pops everything out of the stack onto a new stack, counting the items, and returns them to the original stack
        Author: Maya Klabin
        Input: Nothing 
-       Output: The number of items in the stack
-       Notes: 
+       Output: The number of items in the stack 
     */
-    
     public int length()
     {
 	return this.size();
-    }
+    }//length
 
     /*
       Function: ClearAll
@@ -141,35 +139,29 @@ import java.util.ArrayList;
 
     /*
       Fuction: Randomize
-      Description: Changes the order randomly
+      Description: Changes the order of the items in the stack randomly
       Author: Maya Klabin and Michael Dubin
       Input: Nothing
       Output: Nothing
-
     */
     public void randomize()
     {
-
  	ArrayList list = new ArrayList();
-
 	
 	while (length() > 0)
 	    {
+		list.add(this.pop());	    
+	    }//converts the stack into the arraylist
 
-		list.add(this.pop());
-			    
-	    }
-
-	java.util.Collections.shuffle(list);
-
+	java.util.Collections.shuffle(list);//randomizes the arraylist
+	
 	while (!list.isEmpty())
 	    {
 		this.push(list.get(0));
 		list.remove(0);
-	    } 
-
-
-	}
+	    }//converts the randomized arraylist into a stack 
+    
+    }//randomize
 
 
     public void clearAll()

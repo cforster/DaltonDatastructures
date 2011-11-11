@@ -1,5 +1,6 @@
 public class LinkedListI
 {
+    
     Node first;//is a pointer
 
     public void add(int data)
@@ -9,6 +10,38 @@ public class LinkedListI
 	temp.data = data;
 	first = temp;
     }//add    
+    /*  
+     Authors: Taylor Wright and Harrison DiPirinzio
+     Input: Index and Node
+     Output: Int
+    Function: Takes a node and pritns the data from that node
+    */
+
+    public int get(int index, Node n)
+    {
+	if(index==0)return n.data; 
+	return get(index-1,n.pointer);
+    }//get
+
+    /*
+    Authors: Taylor Wright and Harrison DiPirinzio
+    Input: Null
+    Output: Null
+    Function: Converts Linked List to an Array
+    */
+
+    public void toArray()
+    {
+	int[] one = new int[this.size(first)];
+	Node temp=first; 
+
+	for(int i=0; i<one.length; i++)
+	    {
+		one[i]=temp.data;
+		temp=temp.pointer;
+	    }//for loop
+
+    }//toArray
 
 
     public int factorial(int n)
@@ -85,6 +118,42 @@ public class LinkedListI
     }//removelast
 
 
+    //By Michael Zhao
+    /**
+       Author: Michael Zhao
+       Input: int keep, node n
+       Output: Nothing (It is a void)
+       Function: Retains only the elements in this list that are contained in the specified int
+       In other words, removes from this list all the elements that are not contained in the specified int
+
+
+
+     **/
+    public void retain(int keep, Node n)
+    {
+
+	if(n.pointer!=null)//loop through all the nodes
+	    {
+		if(n.data!=keep)
+		    {
+			//delete this item
+			n.pointer = n.pointer.pointer;//the pointer skips this node
+			retain(keep, n.pointer.pointer);
+		    }
+		else
+		    {
+			//keep this item
+			retain(keep, n.pointer);
+		    }
+
+	    }	
+
+    }
+    //By Michael Zhao 
+
+
+
+
     /**
        Authors: Emily Lovett and Alex Mayer
        Input: index, node n
@@ -104,24 +173,51 @@ public class LinkedListI
     /**Name: Clone
       Function: Returns a duplicate of original LinkedList
       Authors: Maya Klabin and Xander Chase
-    **/
-
+      Input: original list
+      Output: duplicated list
+    */
     public Node clone(Node n)
     {    
-	
 	if(n.pointer!=null)
 	    {
 		Node duplicate = new Node();
 		duplicate.data = n.data;
 		duplicate.pointer = clone(n.pointer);
 		return duplicate;
-	    }//if
+	    }//if, duplicated all data into a new node, transfering pointer info
 	else
 	    {
 		Node duplicate = new Node();
 		duplicate.pointer = null;
 		duplicate.data = n.data;
 		return duplicate;
-	    }//else
+	    }//else, duplicated data and pointer info for the last node
     }//clone
+
+
+    /*Name: Randomize the clone
+      Function: Returns a duplicated, randomized linkedlist
+      Authors: Maya Klabin and Xander Chase
+      Input: Original list
+      Output: New Randomized form of the original list
+     */
+
+    public Node randomizeclone(Node n)
+    {
+	this.add(1);
+	if(n.pointer!=null)
+	    {
+		Node duplicate = new Node();
+		duplicate.data = n.data;
+		duplicate.pointer = randomizeclone(n.pointer);
+		return duplicate;
+	    }
+	
+
+	return null;
+
+
+    }//randomize
+
 }//class
+

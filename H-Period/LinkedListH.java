@@ -79,5 +79,6 @@ public class LinkedListH{
 	else if(n.pointer==null) return false;
 	else return contains(n.pointer, d);
     }
+    
 //class
 }
