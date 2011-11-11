@@ -38,6 +38,7 @@ public class LinkedListH{
       	    }
 	n.setData(d);
     }
+    
 
   //Author: Katherine
   //Function: get
@@ -57,12 +58,22 @@ public class LinkedListH{
 	return n.data;
     }
 
-}//class
-}
+
+    // Annelise (clear fuction)
+
+       void clear()
+       {
+	   Node first = header.next();
+	   while (first !=header)
+	       {
+		   first= null;
+	       }
+	   return null;
+      }
 
     //Sophia
     // isempty 
- boolean isEmpty ()
+    boolean isEmpty ()
     {
 	if (first==null)
 	    { 
@@ -79,4 +90,4 @@ public class LinkedListH{
 	else if(n.pointer==null) return false;
 	else return contains(n.pointer, d);
     }
-//class
+}//class
