@@ -1,5 +1,6 @@
 public class LinkedListI
 {
+    
     Node first;//is a pointer
 
     public void add(int data)
@@ -9,6 +10,38 @@ public class LinkedListI
 	temp.data = data;
 	first = temp;
     }//add    
+    /*  
+     Authors: Taylor Wright and Harrison DiPirinzio
+     Input: Index and Node
+     Output: Int
+    Function: Takes a node and pritns the data from that node
+    */
+
+    public int get(int index, Node n)
+    {
+	if(index==0)return n.data; 
+	return get(index-1,n.pointer);
+    }//get
+
+    /*
+    Authors: Taylor Wright and Harrison DiPirinzio
+    Input: Null
+    Output: Null
+    Function: Converts Linked List to an Array
+    */
+
+    public void toArray()
+    {
+	int[] one = new int[this.size(first)];
+	Node temp=first; 
+
+	for(int i=0; i<one.length; i++)
+	    {
+		one[i]=temp.data;
+		temp=temp.pointer;
+	    }//for loop
+
+    }//toArray
 
 
     public int factorial(int n)
@@ -67,7 +100,7 @@ public class LinkedListI
 
     public void removefirst(Node n)
     {
-	first = n.pointer;
+	first = n.pointer; //makes first point to the second node
     }//removefirst
 
 /**
@@ -81,20 +114,30 @@ public class LinkedListI
     {
         if(n.pointer.pointer!= null)  removelast(n.pointer);
           
-	else if (n.pointer.pointer == null) n.pointer = null;    
+	else if (n.pointer.pointer == null) n.pointer = null; //sets second to last node's pointer as null    
     }//removelast
 
 
     //By Michael Zhao
-    public boolean retain(int keep, Node n)
-    {// Retains only the elements in this list that are contained in the specified collection (optional operation). 
-	// In other words, removes from this list all the elements that are not contained in the specified collection.
-	if(n.pointer!=null)
+    /**
+       Author: Michael Zhao
+       Input: int keep, node n
+       Output: Nothing (It is a void)
+       Function: Retains only the elements in this list that are contained in the specified int
+       In other words, removes from this list all the elements that are not contained in the specified int
+
+
+
+     **/
+    public void retain(int keep, Node n)
+    {
+
+	if(n.pointer!=null)//loop through all the nodes
 	    {
 		if(n.data!=keep)
 		    {
 			//delete this item
-			n.pointer = n.pointer.pointer;
+			n.pointer = n.pointer.pointer;//the pointer skips this node
 			retain(keep, n.pointer.pointer);
 		    }
 		else
@@ -104,9 +147,10 @@ public class LinkedListI
 		    }
 
 	    }	
-	return false;
+
     }
     //By Michael Zhao 
+
 
 
 
@@ -119,14 +163,14 @@ public class LinkedListI
      **/
     public void remove(int index, Node n)
     {
-        if(index==1) n.pointer = n.pointer.pointer;
+        if(index==1) n.pointer = n.pointer.pointer; //when the index is 1 (index increments down every time you run), sets n.pointer to n.pointer.pointer to skip over the node 
 	
-	else if(index==0) removefirst(n);
+	else if(index==0) removefirst(n); //to remove the first node... sends it to removefirst
 
-        else remove(index-1, n.pointer);
+        else remove(index-1, n.pointer); //when index isn't 1 (so when it's not BEFORE the node you want to remove), it runs the function again, removing one and moving to the next node
     }//set  
 
-    /*Name: Clone
+    /**Name: Clone
       Function: Returns a duplicate of original LinkedList
       Authors: Maya Klabin and Xander Chase
       Input: original list
