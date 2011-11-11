@@ -18,17 +18,18 @@ public class LLTest
 
 	System.out.println(mylist.size(mylist.first));
 
-<<<<<<< HEAD
+
 
 	//By MZ
 	mylist.retain(2, mylist.first);
+	System.out.println("MZ retain is 2")
 	//By MZ
-=======
+
 	System.out.println(mylist.isEmpty(mylist.first));
 
 	
 	mylist.print(mylist.clone(mylist.first));
->>>>>>> origin/master
+
 	
     }//main
 
