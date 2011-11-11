@@ -127,25 +127,51 @@ public class LinkedListI
     /*Name: Clone
       Function: Returns a duplicate of original LinkedList
       Authors: Maya Klabin and Xander Chase
+      Input: original list
+      Output: duplicated list
     */
-
     public Node clone(Node n)
     {    
-	
 	if(n.pointer!=null)
 	    {
 		Node duplicate = new Node();
 		duplicate.data = n.data;
 		duplicate.pointer = clone(n.pointer);
 		return duplicate;
-	    }//if
+	    }//if, duplicated all data into a new node, transfering pointer info
 	else
 	    {
 		Node duplicate = new Node();
 		duplicate.pointer = null;
 		duplicate.data = n.data;
 		return duplicate;
-	    }//else
+	    }//else, duplicated data and pointer info for the last node
     }//clone
+
+
+    /*Name: Randomize the clone
+      Function: Returns a duplicated, randomized linkedlist
+      Authors: Maya Klabin and Xander Chase
+      Input: Original list
+      Output: New Randomized form of the original list
+     */
+
+    public Node randomizeclone(Node n)
+    {
+	this.add(1);
+	if(n.pointer!=null)
+	    {
+		Node duplicate = new Node();
+		duplicate.data = n.data;
+		duplicate.pointer = randomizeclone(n.pointer);
+		return duplicate;
+	    }
+	
+
+
+
+
+    }//randomize
+
 }//class
 >>>>>>> origin/master
