@@ -105,7 +105,7 @@ public class LinkedListI
 	else if (n.pointer.pointer == null) n.pointer = null;    
     }//removelast
 
-<<<<<<< HEAD
+
     //By Michael Zhao
     public boolean retain(int keep, Node n)
     {// Retains only the elements in this list that are contained in the specified collection (optional operation). 
@@ -125,9 +125,11 @@ public class LinkedListI
 		    }
 
 	    }	
+	return false;
+    }
     //By Michael Zhao 
-}//class
-=======
+
+
 
     /**
        Authors: Emily Lovett and Alex Mayer
@@ -189,10 +191,10 @@ public class LinkedListI
 	    }
 	
 
-
+	return null;
 
 
     }//randomize
 
 }//class
->>>>>>> origin/master
+
