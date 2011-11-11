@@ -39,8 +39,25 @@ public class LinkedListH{
 	n.setData(d);
     }
 
-  //Author: Katherine
-  //Function: get
+    //Author: Katherine
+    //Function: toArray
+    double[] toArray ()
+    {
+	double[] newArray;
+	newArray = new double[size(first)];
+	Node temp= first; 
+	for (int i=0; i<newArray.length; i++)
+	    {
+		newArray[i]= temp.data; 
+		temp= first.pointer;
+	    }	
+	return newArray;
+    }    
+
+
+
+    //Author: Katherine
+    //Function: get
     double get(int index, Node n)
     {
 	if (index!= 0)
@@ -55,7 +72,8 @@ public class LinkedListH{
 		    }
 	    }
 	return n.data;
-    }
+    } //end of get
+
 
 
 
