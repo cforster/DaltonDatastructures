@@ -58,11 +58,11 @@ import java.util.ArrayList;
      */
     //}
     /*                                                                                                                                                            
-																				  Function: reveress the order of the stack                                                                                                                  
-																				  Description: reverses the order of the stack                                                           
-																				  Author: Harry DiPrinizio & Taylor Wright                                                                                                                     
-																				  Output: A stack w/ the contents reversed                                                                                                                  
-																				  Input: a Stack                                                                                                                                               
+																				   Function: reveress the order of the stack                                                                                                                  
+																			 	   Description: reverses the order of the stack                                                           
+																				   Author: Harry DiPrinizio & Taylor Wright                                                                                                                     
+																				   Output: A stack w/ the contents reversed                                                                                                                  
+																				   Input: a Stack                                                                                                                                               
     */
     public void reverse()
     {
@@ -235,9 +235,12 @@ import java.util.ArrayList;
 
 	return -1;
 
-
     }
 
+	public static void main(String[] args)
+	{
+
+	}
 
 
 }//class
