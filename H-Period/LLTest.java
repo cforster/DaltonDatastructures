@@ -8,12 +8,19 @@ public class LLTest
 	myList.addfirst(5);
 	myList.print(myList.first);
 	System.out.println(myList.size(myList.first));
-
 	System.out.println(myList.isEmpty());
 	System.out.println(myList.contains(myList.first, 4.0));
 	myList.removeFirst(); 
 
-	myList.get(1, myList.first);
+
+	myList.get(1, myList.first); // get
+
+	double[] testArray = myList.toArray(); //toArray
+
+	for (int i=0; i<testArray.length; i++)
+	    {
+		System.out.println(testArray[i]);
+	    }
 
 
     }
