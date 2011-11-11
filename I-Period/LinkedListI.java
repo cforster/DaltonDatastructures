@@ -86,15 +86,25 @@ public class LinkedListI
 
 
     //By Michael Zhao
-    public boolean retain(int keep, Node n)
-    {// Retains only the elements in this list that are contained in the specified collection (optional operation). 
-	// In other words, removes from this list all the elements that are not contained in the specified collection.
-	if(n.pointer!=null)
+    /**
+       Author: Michael Zhao
+       Input: int keep, node n
+       Output: Nothing (It is a void)
+       Function: Retains only the elements in this list that are contained in the specified int
+       In other words, removes from this list all the elements that are not contained in the specified int
+
+
+
+     **/
+    public void retain(int keep, Node n)
+    {
+
+	if(n.pointer!=null)//loop through all the nodes
 	    {
 		if(n.data!=keep)
 		    {
 			//delete this item
-			n.pointer = n.pointer.pointer;
+			n.pointer = n.pointer.pointer;//the pointer skips this node
 			retain(keep, n.pointer.pointer);
 		    }
 		else
@@ -104,9 +114,10 @@ public class LinkedListI
 		    }
 
 	    }	
-	return false;
+
     }
     //By Michael Zhao 
+
 
 
 
