@@ -3,6 +3,9 @@ public class LLTest
     public static void main(String[] args)
     {
 	LinkedListI mylist = new LinkedListI();
+
+	System.out.println(mylist.isEmpty(mylist.first));
+
 	mylist.add(1);
 	mylist.add(2);
 	mylist.add(3);
@@ -14,9 +17,18 @@ public class LLTest
 	System.out.println(mylist.factorial(5));
 
 	System.out.println(mylist.size(mylist.first));
+
+
+
+	//By MZ
+	mylist.retain(2, mylist.first);
+	//By MZ
+
+	System.out.println(mylist.isEmpty(mylist.first));
+
 	
-	System.out.println(mylist.get(2,mylist.first));
-	
+	mylist.print(mylist.clone(mylist.first));
+
 	
     }//main
 
