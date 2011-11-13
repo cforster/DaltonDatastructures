@@ -1,3 +1,4 @@
+import java.util.Random;
 public class LinkedListI
 {
     
@@ -28,9 +29,11 @@ public class LinkedListI
     Input: Null
     Output: Null
     Function: Converts Linked List to an Array
+    
+    EDITS: Maya added return statemet, initially it was void, I changed it to int[] in order to use in shuffle
     */
 
-    public void toArray()
+    public int[] toArray()
     {
 	int[] one = new int[this.size(first)];
 	Node temp=first; 
@@ -40,7 +43,7 @@ public class LinkedListI
 		one[i]=temp.data;
 		temp=temp.pointer;
 	    }//for loop
-
+	return one;
     }//toArray
 
 
@@ -195,46 +198,44 @@ public class LinkedListI
     }//clone
 
 
-
     /*
-      Name: toarray
-      Function: converts a linkedlist into an array
+      Name: remove all
+      Function: makes first node null, which clears the linked list
       Authors: Maya Klabin
       Input: nothing
-      Output: an array
+      Output: nothing
      */
 
-    public int[] toarray()
+    public void removeAll()
     {
-	Node temp = first;
-	int[] newarray = new int[size(first)];
-	for(int i =0; i< newarray.length; i++)
-	    {
-		newarray[i] = temp.data;
-		temp = temp.pointer;
-	    }
-	return newarray;
-
-    }
+	first = null;
+    }//removeAll
 
 
-
-
-
-
-    /*Name: Randomize the clone
-      Function: Returns a duplicated, randomized linkedlist
-      Authors: Maya Klabin and Xander Chase
-      Input: Original list
-      Output: New Randomized form of the original list
+    /*Name: Shuffle
+      Function: Randomizes order of elements
+      Authors: Maya Klabin / Xander Chase helped create idea and worked on logic (unable to write code because he was at MUN)
+      Input: nothing
+      Output: nothing
      */
 
-    //    public int shuffle(Node n)
-    //{
-	
-	
-	
-// }//shuffle
+    public void shuffle()
+    {
+	Random rand = new Random();
+	int[] newarray = toArray();
+	for( int i =0; i < newarray.length; i++)
+	    {
+		int ranpos = rand.nextInt(newarray.length);
+		int temp = newarray[i];
+		newarray[i] = newarray[ranpos];
+		newarray[ranpos] = temp;
+	    }
+	removeAll();
+	for(int t : newarray)
+	    {
+		add(t);
+	    }
+    }//shuffle
 
 }//class
    
