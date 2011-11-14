@@ -35,35 +35,47 @@ import java.util.ArrayList;
 
     public class DaltonStack extends java.util.Stack
     {
+	/*
+	  Function: subStack
+	  Description: takes a portion (from i to j) of the original stack
+	               and returns that portion
+	  Author: Jeffrey Stern
+	 */
+	public DaltonStack subStack (int i, int j)
+	{
+	    DaltonStack topstack = new DaltonStack(); //creates a top stack
+	    DaltonStack substack = new DaltonStack(); //creates the sub stack
+	    
+	    //get the topstack off the mainstack:
+	    for(int x=0; x<i; x++)
+		{
+		    topstack.push(this.pop());
+		}
 
-   
-    /*
-      takes a portion (from i to j) of the original Stack
+	    //creates the substack from i to j:
+	    for (int c=i; c<=j; c++)
+		{
+		    substack.push(this.pop());
+		}
+	    
+	    substack.reverse();
+	   
+	    //puts the topstack back into the original stack:
+	    while(!topstack.isEmpty())
+		{
+		    this.push(topstack.pop());
+		}
+	    return substack;
+	    
+	}//subStack
 
-    */
-    //SUBSTRING FOR THE MYSTRING PROGRAM (NOT STACK)
-    /* public DaltonStack  subStack(int i, int j)
-       {
-       int [] substack = new int [j-i+1];//new substrings length
-       if (i<j)
-       {
-       for (int c=i; c<=j; c++)
-       {
-       substack [c-i]=m[c];
-       }
-       }
-       return new DaltonStack (substack);
-    */
-    /*create a top stack, create the substack (it would be backward-->need to reverse) put the removed items back on the original stack, return the substack.
-     */
-    //}
-    /*                                                                                                                                                            
-																				  Function: reveress the order of the stack                                                                                                                  
+
+	/*																				  Function: reveress the order of the stack                                                                                                                  
 																				  Description: reverses the order of the stack                                                           
 																				  Author: Harry DiPrinizio & Taylor Wright                                                                                                                     
-																				  Output: A stack w/ the contents reversed                                                                                                                  
+																				  Output: A stack w/ the contents reversed                                                                                       
 																				  Input: a Stack                                                                                                                                               
-    */
+	*/
     public void reverse()
     {
 	java.util.Queue<Object> myQueue = new java.util.LinkedList<Object>();

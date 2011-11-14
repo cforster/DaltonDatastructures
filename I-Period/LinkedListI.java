@@ -21,7 +21,7 @@ public class LinkedListI
     public void print(Node n)
     {
        
-	System.out.println(n.data);
+	if(n!=null) System.out.println(n.data);
 
 	if(n.pointer!= null)
 	    {
@@ -45,5 +45,24 @@ public class LinkedListI
 	if(index==0) n.data=data;
 	else set(index-1, data, n.pointer);
     }//set
+
+    //stern/dubin
+    public void clear()
+    {
+	first=null;
+    }//clear
+   
+    //stern/dubin
+    public int indexOf (int o)
+    {
+	if (o==
+	    {
+
+
+	    }
+
+	 else return -1;
+
+    }//indexOf
 
 }//class
