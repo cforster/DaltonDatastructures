@@ -3,6 +3,28 @@ public class LinkedListI
 {
     
     Node first;//is a pointer
+    
+    //Jeff Stern, addLast
+    public void addLast(int data)
+    {
+	//make the new node:
+	Node temp = new Node();
+	temp.data = data;
+	
+       
+	if (temp==first) add (data);//deals with error trying to run addLast for adding an object to first node-->runs the method add instead under this condition
+	   
+         //add to the end:
+	getLastNode(first).pointer=temp;
+    }//addLast
+
+    //Charles Forster, get last node
+    public Node getLastNode(Node n)
+    {
+	if(n.pointer==null) return n;
+	return getLastNode(n.pointer);
+    }
+
 
     public void add(int data)
     {
@@ -237,5 +259,33 @@ public class LinkedListI
 	    }
     }//shuffle
 
-}//class
+
    
+    
+//stern/dubin
+    public void clear()
+    {
+	first=null;
+    }//clear
+/*
+Authors: stern/dubin
+Function: Return the index of the first occurrence of the specified element in the list, or -1 if this list does not contain the element.
+*/
+    public int indexOf (int o)
+    {
+    Node n = first;
+    int index = 0;
+    while (n!=null)
+	{
+	    if(n.data == o)
+		{
+	     	    return index;
+		}
+	    index++;
+	    n=n.pointer;
+	}
+    return -1;
+
+    }//index of
+
+}  

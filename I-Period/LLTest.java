@@ -6,26 +6,29 @@ public class LLTest
     {
 	LinkedListI mylist = new LinkedListI();
 
-	System.out.println(mylist.isEmpty(mylist.first));
+	//	System.out.println(mylist.isEmpty(mylist.first));
 
-	mylist.add(1);
-	mylist.add(2);
-	mylist.add(3);
+	//	mylist.add(1);
+	//	mylist.add(2);
+	//	mylist.add(3);
 
 
 	
-	mylist.print(mylist.first);
+	//mylist.print(mylist.first);
 
-	mylist.clear();
+	//	mylist.clear();
 
 	mylist.add(1);
-	mylist.add(1);	
-	mylist.add(1);
+	mylist.addLast(2);	
+	mylist.addLast(3);
 	
+	System.out.println(mylist.indexOf(3));
+
+	/*	
 	mylist.print(mylist.first);
 
 
-
+    
 	int[] arraytest = mylist.toArray();
 	System.out.println("to array test");
 	System.out.println(Arrays.toString(arraytest));
@@ -50,6 +53,7 @@ public class LLTest
 	mylist.removeAll();
 	if(mylist.first == null)
 	System.out.println("NULL!");
+	*/
     }//main
 
 }//class
