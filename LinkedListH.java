@@ -2,6 +2,7 @@ public class LinkedListH{
 
  //Author: All of Us
     Node first; //pointer to a Node
+
     LinkedListH(){}
 
     void  addfirst(double data)
@@ -13,7 +14,6 @@ public class LinkedListH{
     }
     void print(Node n)
     {
-
 	System.out.println(n.getData());
         if(n.getPointer()!=null)
 	    {
@@ -38,7 +38,6 @@ public class LinkedListH{
       	    }
 	n.setData(d);
     }
-    
 
     //Author: Katherine
     //Function: toArray
@@ -75,21 +74,12 @@ public class LinkedListH{
 	return n.data;
     } //end of get
 
-    /** Annelise & Derek (clear fuction)
-     **/  
-    void clear(Node header, Node n)
-       { 
-	   while (first != n)
-	       {
-		   first= null;
-	       }
-       }
 
 
 
     //Sophia
     // isempty 
-    boolean isEmpty ()
+ boolean isEmpty ()
     {
 	if (first==null)
 	    { 

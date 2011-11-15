@@ -58,11 +58,11 @@ import java.util.ArrayList;
      */
     //}
     /*                                                                                                                                                            
-																				  Function: reveress the order of the stack                                                                                                                  
-																				  Description: reverses the order of the stack                                                           
-																				  Author: Harry DiPrinizio & Taylor Wright                                                                                                                     
-																				  Output: A stack w/ the contents reversed                                                                                                                  
-																				  Input: a Stack                                                                                                                                               
+																				   Function: reveress the order of the stack                                                                                                                  
+																			 	   Description: reverses the order of the stack                                                           
+																				   Author: Harry DiPrinizio & Taylor Wright                                                                                                                     
+																				   Output: A stack w/ the contents reversed                                                                                                                  
+																				   Input: a Stack                                                                                                                                               
     */
     public void reverse()
     {
@@ -207,36 +207,42 @@ import java.util.ArrayList;
 
     }//method
 
-    /*alex and emily*/
+	/**
+	Authors: Emily and Alex
+	Input: Object number (user is searching for its frequency)
+	Output: int buddha (# of times number appears)
+	Purpose: Find the frequency of number
+	**/
+
     int frequency(Object number)
     {
-	Object[] jesus = new Object[this.size()];
-	int buddha = 0;
+	Object[] jesus = new Object[this.size()]; //new array that allows us to search through the data
+	int buddha = 0; //incrementer
+	int moses = this.size(); //size of the stack, need it to stay constant
 
-	while(this.isEmpty() == false)
+	while(this.isEmpty() == false) //this pops everything in the stack and puts it in our new array
 	    {
-		for (int i = 0; i <= this.size(); i++)
+		for (int i = 0; i < moses; i++)
 		    {
 			jesus[i] = this.pop();
-		    }
+		    }//while
 
-	    }
+	    }//while
 
-	for (int x = 0; x<=jesus.length; x++)
+	for (int x = 0; x<jesus.length; x++) //goes through the new array and counts the frequency, incrementing buddha
 	    {
-		if(jesus[x]==number)
-		    {
-			buddha++;
-		    }
+		if(jesus[x]==number) buddha++;
+		   
+	    }//for
 
-	    }
+	for (int j = moses-1; j >= 0; j--) //pushes everything back into the stack in original order
+	    {
+		this.push(jesus[j]);
+	    }//for
 
-	//push everything back into the stack starting from the top                                                                                               
+	return buddha;
 
-	return -1;
-
-
-    }
+    }//frequency
 
 
 
