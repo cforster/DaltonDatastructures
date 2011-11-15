@@ -35,35 +35,47 @@ import java.util.ArrayList;
 
     public class DaltonStack extends java.util.Stack
     {
+	/*
+	  Function: subStack
+	  Description: takes a portion (from i to j) of the original stack
+	               and returns that portion
+	  Author: Jeffrey Stern
+	 */
+	public DaltonStack subStack (int i, int j)
+	{
+	    DaltonStack topstack = new DaltonStack(); //creates a top stack
+	    DaltonStack substack = new DaltonStack(); //creates the sub stack
+	    
+	    //get the topstack off the mainstack:
+	    for(int x=0; x<i; x++)
+		{
+		    topstack.push(this.pop());
+		}
 
-   
-    /*
-      takes a portion (from i to j) of the original Stack
+	    //creates the substack from i to j:
+	    for (int c=i; c<=j; c++)
+		{
+		    substack.push(this.pop());
+		}
+	    
+	    substack.reverse();
+	   
+	    //puts the topstack back into the original stack:
+	    while(!topstack.isEmpty())
+		{
+		    this.push(topstack.pop());
+		}
+	    return substack;
+	    
+	}//subStack
 
-    */
-    //SUBSTRING FOR THE MYSTRING PROGRAM (NOT STACK)
-    /* public DaltonStack  subStack(int i, int j)
-       {
-       int [] substack = new int [j-i+1];//new substrings length
-       if (i<j)
-       {
-       for (int c=i; c<=j; c++)
-       {
-       substack [c-i]=m[c];
-       }
-       }
-       return new DaltonStack (substack);
-    */
-    /*create a top stack, create the substack (it would be backward-->need to reverse) put the removed items back on the original stack, return the substack.
-     */
-    //}
-    /*                                                                                                                                                            
-																				  Function: reveress the order of the stack                                                                                                                  
+
+	/*																				  Function: reveress the order of the stack                                                                                                                  
 																				  Description: reverses the order of the stack                                                           
 																				  Author: Harry DiPrinizio & Taylor Wright                                                                                                                     
-																				  Output: A stack w/ the contents reversed                                                                                                                  
+																				  Output: A stack w/ the contents reversed                                                                                       
 																				  Input: a Stack                                                                                                                                               
-    */
+	*/
     public void reverse()
     {
 	java.util.Queue<Object> myQueue = new java.util.LinkedList<Object>();
@@ -123,11 +135,10 @@ import java.util.ArrayList;
        Output: The number of items in the stack
        Notes: 
     */
-    
     public int length()
     {
 	return this.size();
-    }
+    }//length
 
     /*
       Function: ClearAll
@@ -141,35 +152,29 @@ import java.util.ArrayList;
 
     /*
       Fuction: Randomize
-      Description: Changes the order randomly
+      Description: Changes the order of the items in the stack randomly
       Author: Maya Klabin and Michael Dubin
       Input: Nothing
       Output: Nothing
-
     */
     public void randomize()
     {
-
  	ArrayList list = new ArrayList();
-
 	
 	while (length() > 0)
 	    {
+		list.add(this.pop());	    
+	    }//converts the stack into the arraylist
 
-		list.add(this.pop());
-			    
-	    }
-
-	java.util.Collections.shuffle(list);
-
+	java.util.Collections.shuffle(list);//randomizes the arraylist
+	
 	while (!list.isEmpty())
 	    {
 		this.push(list.get(0));
 		list.remove(0);
-	    } 
-
-
-	}
+	    }//converts the randomized arraylist into a stack 
+    
+    }//randomize
 
 
     public void clearAll()
@@ -215,36 +220,42 @@ import java.util.ArrayList;
 
     }//method
 
-    /*alex and emily*/
+	/**
+	Authors: Emily and Alex
+	Input: Object number (user is searching for its frequency)
+	Output: int buddha (# of times number appears)
+	Purpose: Find the frequency of number
+	**/
+
     int frequency(Object number)
     {
-	Object[] jesus = new Object[this.size()];
-	int buddha = 0;
+	Object[] jesus = new Object[this.size()]; //new array that allows us to search through the data
+	int buddha = 0; //incrementer
+	int moses = this.size(); //size of the stack, need it to stay constant
 
-	while(this.isEmpty() == false)
+	while(this.isEmpty() == false) //this pops everything in the stack and puts it in our new array
 	    {
-		for (int i = 0; i <= this.size(); i++)
+		for (int i = 0; i < moses; i++)
 		    {
 			jesus[i] = this.pop();
-		    }
+		    }//while
 
-	    }
+	    }//while
 
-	for (int x = 0; x<=jesus.length; x++)
+	for (int x = 0; x<jesus.length; x++) //goes through the new array and counts the frequency, incrementing buddha
 	    {
-		if(jesus[x]==number)
-		    {
-			buddha++;
-		    }
+		if(jesus[x]==number) buddha++;
+		   
+	    }//for
 
-	    }
+	for (int j = moses-1; j >= 0; j--) //pushes everything back into the stack in original order
+	    {
+		this.push(jesus[j]);
+	    }//for
 
-	//push everything back into the stack starting from the top                                                                                               
+	return buddha;
 
-	return -1;
-
-
-    }
+    }//frequency
 
 
 
