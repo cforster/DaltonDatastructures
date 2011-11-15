@@ -110,13 +110,13 @@ public class LinkedListH{
 //indexOf
 int indexOf (Node n, double d, int index)
 {
-    indexOf(First, 3.0, 0);
+    indexOf(first, 3.0, 0);
     if (first.data==d)
-{return index;
-}
+	{
+	    return index;
+	}
     else
 	return indexOf(n.pointer, d, index+1);
-
 }
 
 
