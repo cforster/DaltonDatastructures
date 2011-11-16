@@ -136,7 +136,13 @@ import java.util.ArrayList;
       Input:Nothing 
       Output:Nothing
     */
-
+	public void deleteAll()
+	{
+	    for(int i=0; i<this.size(); i++)//runs through stack
+		{
+		    this.pop();//removes each piece from the the stack
+		}
+	}
 
 
     /*

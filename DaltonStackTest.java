@@ -13,12 +13,9 @@ class DaltonStackTest
 	myStack.add(5);
 
 	myStack.reverse();
+	myStack.deleteAll();
+        System.out.println(myStack.pop());
+	   
 
-	while(!myStack.isEmpty())
-	    {
-		System.out.println(myStack.pop());
-	    }
-
-    }
-
+}
 }
