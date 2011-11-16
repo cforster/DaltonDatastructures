@@ -10,7 +10,6 @@ public class LLTest
 	System.out.println(myList.size(myList.first));
 	System.out.println(myList.isEmpty());
 	System.out.println(myList.contains(myList.first, 4.0));
-	myList.removeFirst(); 
 
 
 	myList.get(1, myList.first); // get
