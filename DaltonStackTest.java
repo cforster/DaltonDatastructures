@@ -6,16 +6,14 @@ class DaltonStackTest
     {
 	DaltonStack myStack= new DaltonStack();
 
-	myStack.add(1);
-	myStack.add(2);
-	myStack.add(3);
-	myStack.add(4);
+	myStack.add(8);
+	myStack.add(10);
 	myStack.add(5);
+	myStack.add(11);
+	myStack.add(2);
 
-	myStack.reverse();
-	myStack.deleteAll();
-        System.out.println(myStack.pop());
-	   
 
-}
+	System.out.println(myStack.subStack(1,3));
+    }
+
 }

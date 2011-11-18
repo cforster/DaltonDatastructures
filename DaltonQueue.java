@@ -5,7 +5,7 @@ Isabella Giovannini
 Jason Shein
 Katherine Odom
 Malina Buturovic
-Derek Whang
+Derek Whang -_- hohoho
 Annelise Steele <3
 Sophia Edelstein 
  */
@@ -44,6 +44,27 @@ public class DaltonQueue extends java.util.Queue
 	    }
 	return length; 
     }
+    /*
+      AUthor: Sophia 
+      Function: Search
+    */
+    public int search(Object o) 
+    { 
+	offer("end of array");
+	int where = 0;
+	
+        while(!peek().toString().equals("end of array"))
+	    {
+		if(!peek().toString().equals(o))	
+		    {
+			return where;
+		    }
+		offer(poll());
+		where++;
+	    }  
+	return -1; 
+    }
+    
 
     /*                                                                          
                                                           
@@ -60,8 +81,11 @@ public class DaltonQueue extends java.util.Queue
 	Array[index] = new;
     }
 
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> origin/master
     /*
       Author: Isabella
      */
@@ -81,11 +105,17 @@ public class DaltonQueue extends java.util.Queue
 	//sort the array:
 	if(queue[counter]<queue[counter--])	 
 	    {
-	  
+		int greater = queue[counter--];
+		int smaller = queue[counter];
+		queue[counter]=greater;
+		queue[counter--]=smaller;
 	    }
 	
-
 	//return it to the queue:
+	for (counter=0; counter<queue.size(); counter++)
+	    {
+		offer(queue[counter]);
+	    }
     }
 
     /*
@@ -94,10 +124,19 @@ public class DaltonQueue extends java.util.Queue
     /*
 
     {
-    java.util.Stack myStack = new java.util.Stack();
-    //put everything from this into myStack
-    myStack = this.toStack();
-    this.add(myStack.pop());
+    
+	/*
+	  Author: Katherine
+	  Function: Dump (delete everything from the queue)
+	*/
+	void dump()
+	{
+	    while(!this.isEmpty())
+		{
+		    this.remove();
+		} 
+	}
+	
 
 
     }
