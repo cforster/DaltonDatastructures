@@ -10,21 +10,23 @@ Annelise Steele <3
 Sophia Edelstein 
  */
 
-public class DaltonQueue extends java.util.Queue
+public class DaltonQueue extends java.util.LinkedList
 {
     /*
       Author: Malina
       Function: peek_all
-      /*
+    */
+    /*
     public String peek_all()
     {
 	String input="";
-	for (i=front; i<back; i++)
+	for (int i=front; i<back; i++)
 	    {
-		input=input ", " + Array[index];
+		input=input + ", " + Array[index];
 	    }
 	return input;
     }
+    */
 
 
 
@@ -37,7 +39,7 @@ public class DaltonQueue extends java.util.Queue
 	offer("end of array");
 	int length =0;
 	
-	while(peek().toString().!equals("end of array")) 
+	while(!peek().toString().equals("end of array")) 
 	    {
 		offer(poll());
 		length++;
@@ -68,31 +70,32 @@ public class DaltonQueue extends java.util.Queue
 
     /*                                                                          
                                                           
-  
-
 
     /* 
        Author: ISABELLA and malina. 
 
      */
-
-    void ReplaceAt(int index; int new)
+    /*
+    void ReplaceAt(int index, int rep)
     {
-	Array[index] = new;
+	Array[index] = rep;
     }
+<<<<<<< HEAD
 
+=======
+    */
+>>>>>>> origin/master
 
 
     /*
       Author: Isabella
      */
-    
-
     //in progress
+    /*
     void sort()
     {
 	//make the queue into the array:
-	Object[] queue = new Object[queue.size()]; 
+	Object[] queue = new Object[this.size()]; 
 	int counter = 0;
 	while (!this.isEmpty()) //go through the queue
 	    {
@@ -100,9 +103,9 @@ public class DaltonQueue extends java.util.Queue
 	    }
 
 	//sort the array:
-	if(queue[counter]<queue[counter--])	 
+	if(queue[counter]<queue[counter-1])	 
 	    {
-		int greater = queue[counter--];
+		int greater = queue[counter-1];
 		int smaller = queue[counter];
 		queue[counter]=greater;
 		queue[counter--]=smaller;
@@ -113,22 +116,13 @@ public class DaltonQueue extends java.util.Queue
 	    {
 		offer(queue[counter]);
 	    }
-    }
+	    }
+*/
 
     /*
-    
-	/*
-	  Author: Katherine
-	  Function: Dump (delete everything from the queue)
-	*/
-	void dump()
-	{
-	    while(!this.isEmpty())
-		{
-		    this.remove();
-		} 
-	}
-       
+      Author: Katherine 
+      Function: Reverse (in ABC, out CBA)
+    */
 
     /*
       Author: Katherine
@@ -142,19 +136,14 @@ public class DaltonQueue extends java.util.Queue
 		this.remove();
 	     } 
     }
-	
-
-
-    
-
-
-/*
+       
+    /*
       Author: Shein
       Function: switch(x,y)
       parameters: x and y are both distances from the front of the queue
       return: nothing
     */
-    void switch(int x, int y)
+    void switchElem(int x, int y)
 	{
 	    java.util.Queue queue2 = new java.util.LinkedList();
 	    java.util.Queue queue3 = new java.util.LinkedList();
@@ -166,6 +155,6 @@ public class DaltonQueue extends java.util.Queue
 		    
 		}
 	    
-	    this.poll
+	    this.poll();
 	}
 }
