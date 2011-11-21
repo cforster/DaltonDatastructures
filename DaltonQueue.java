@@ -70,7 +70,6 @@ public class DaltonQueue extends java.util.LinkedList
       Author: Isabella
      */
     //in progress
-    /*
     void sort()
     {
 	//make the queue into the array:
@@ -82,27 +81,15 @@ public class DaltonQueue extends java.util.LinkedList
 	    }
 
 	//sort the array:
-	Array.sort(queue);
-
-	/*
-	counter=0;
-	if(queue[counter+1]<queue[counter-1])	 
-	    {
-		int greater = queue[counter-1];
-		int smaller = queue[counter];
-		queue[counter]=greater;
-		queue[counter--]=smaller;
-	    }
-	*/
-
+	java.util.Arrays.sort(queue);
 
 	//return it to the queue:
-	for (counter=0; counter<queue.size(); counter++)
+	for (counter=0; counter<queue.length; counter++)
 	    {
 		this.offer(queue[counter]);
 	    }
-	    }
-*/
+    }
+
 
     /*
       Author: Katherine
