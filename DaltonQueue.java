@@ -99,22 +99,28 @@ public class DaltonQueue extends java.util.Queue
 	int counter = 0;
 	while (!this.isEmpty()) //go through the queue
 	    {
-		queue[counter]= this.poll();
+		queue[counter++]= this.poll();
 	    }
 
 	//sort the array:
-	if(queue[counter]<queue[counter--])	 
+	Array.sort(queue);
+
+	/*
+	counter=0;
+	if(queue[counter+1]<queue[counter-1])	 
 	    {
 		int greater = queue[counter--];
 		int smaller = queue[counter];
 		queue[counter]=greater;
 		queue[counter--]=smaller;
 	    }
-	
+	*/
+
+
 	//return it to the queue:
 	for (counter=0; counter<queue.size(); counter++)
 	    {
-		offer(queue[counter]);
+		this.offer(queue[counter]);
 	    }
     }
 
