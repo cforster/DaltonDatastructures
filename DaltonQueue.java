@@ -80,11 +80,7 @@ public class DaltonQueue extends java.util.LinkedList
     {
 	Array[index] = rep;
     }
-<<<<<<< HEAD
 
-=======
-    */
->>>>>>> origin/master
 
 
     /*
@@ -118,11 +114,6 @@ public class DaltonQueue extends java.util.LinkedList
 	    }
 	    }
 */
-
-    /*
-      Author: Katherine 
-      Function: Reverse (in ABC, out CBA)
-    */
 
     /*
       Author: Katherine
