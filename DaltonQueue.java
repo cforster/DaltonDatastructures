@@ -81,11 +81,8 @@ public class DaltonQueue extends java.util.Queue
 	Array[index] = new;
     }
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> origin/master
     /*
       Author: Isabella
      */
