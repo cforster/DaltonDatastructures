@@ -84,14 +84,15 @@ public class DaltonQueue extends java.util.LinkedList
 	    }
 
 	//sort the array:
-	Array.sort(queue);
+	java.util.Arrays.sort(queue);
 
 	//return it to the queue:
-	for (counter=0; counter<queue.size(); counter++)
+	for (counter=0; counter<queue.length; counter++)
 	    {
 		this.offer(queue[counter]);
 	    }
-      }
+    }
+
 
     /*
       Author: Katherine
