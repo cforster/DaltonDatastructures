@@ -48,26 +48,7 @@ public class DaltonQueue extends java.util.LinkedList
 	    }
 	return length; 
     }
-    /*
-      AUthor: Sophia 
-      Function: Search
-    */
-    public int search(Object o) 
-    { 
-	offer("end of array");
-	int where = 0;
-	
-        while(!peek().toString().equals("end of array"))
-	    {
-		if(!peek().toString().equals(o))	
-		    {
-			return where;
-		    }
-		offer(poll());
-		where++;
-	    }  
-	return -1; 
-    }
+    
     
 
     /*                                                                          
@@ -82,7 +63,7 @@ public class DaltonQueue extends java.util.LinkedList
     {
 	Array[index] = rep;
     }
-    */
+
 
 
     /*
@@ -97,30 +78,31 @@ public class DaltonQueue extends java.util.LinkedList
 	int counter = 0;
 	while (!this.isEmpty()) //go through the queue
 	    {
-		queue[counter]= this.poll();
+		queue[counter++]= this.poll();
 	    }
 
 	//sort the array:
-	if(queue[counter]<queue[counter-1])	 
+	Array.sort(queue);
+
+	/*
+	counter=0;
+	if(queue[counter+1]<queue[counter-1])	 
 	    {
 		int greater = queue[counter-1];
 		int smaller = queue[counter];
 		queue[counter]=greater;
 		queue[counter--]=smaller;
 	    }
-	
+	*/
+
+
 	//return it to the queue:
 	for (counter=0; counter<queue.size(); counter++)
 	    {
-		offer(queue[counter]);
+		this.offer(queue[counter]);
 	    }
 	    }
 */
-
-    /*
-      Author: Katherine 
-      Function: Reverse (in ABC, out CBA)
-    */
 
     /*
       Author: Katherine
