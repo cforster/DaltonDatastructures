@@ -8,7 +8,7 @@ public class DaltonQueueTest extends DaltonQueue
 	classQueue.offer(4);
 	System.out.println(classQueue.length());
 	System.out.println(classQueue.search(3));
-	classQueue.dump();
+	classQueue.dump();    //katherine's- will return 0
 	System.out.println(classQueue.length());
     }
     
