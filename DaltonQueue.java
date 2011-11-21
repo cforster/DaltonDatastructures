@@ -21,10 +21,13 @@ public class DaltonQueue extends java.util.LinkedList
     
     public String peek_all()
     {
+	offer("end of array");
 	String input="";
-	for (int i=0; i<(this.size()+1);i++)
+
+	while(!peek().toString().equals("end of array"))
 	    {
-		input=input + ", " + this.poll();
+		offer(poll());
+		input = input + " " + this.peek();
 	    }
 	return input;
     }
@@ -70,7 +73,6 @@ public class DaltonQueue extends java.util.LinkedList
       Author: Isabella
      */
     //in progress
-    /*
     void sort()
     {
 	//make the queue into the array:
@@ -84,25 +86,12 @@ public class DaltonQueue extends java.util.LinkedList
 	//sort the array:
 	Array.sort(queue);
 
-	/*
-	counter=0;
-	if(queue[counter+1]<queue[counter-1])	 
-	    {
-		int greater = queue[counter-1];
-		int smaller = queue[counter];
-		queue[counter]=greater;
-		queue[counter--]=smaller;
-	    }
-	*/
-
-
 	//return it to the queue:
 	for (counter=0; counter<queue.size(); counter++)
 	    {
 		this.offer(queue[counter]);
 	    }
-	    }
-*/
+      }
 
     /*
       Author: Katherine
