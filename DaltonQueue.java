@@ -26,8 +26,8 @@ public class DaltonQueue extends java.util.LinkedList
 
 	while(!peek().toString().equals("end of array"))
 	    {
-		offer(poll());
 		input = input + " " + this.peek();
+		offer(poll());
 	    }
 	return input;
     }

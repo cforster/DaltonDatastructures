@@ -13,7 +13,7 @@ public class DaltonQueueTest
 	System.out.println(dq.peek_all());
 	System.out.println(dq.length());
 	dq.dump();
-	System.out.println(dq.search(3));
+	//System.out.println(dq.search(3));
 	dq.dump();    //katherine's- will return 0
 	System.out.println(dq.length());
     }
