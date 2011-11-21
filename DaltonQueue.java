@@ -46,26 +46,7 @@ public class DaltonQueue extends java.util.LinkedList
 	    }
 	return length; 
     }
-    /*
-      AUthor: Sophia 
-      Function: Search
-    */
-    public int search(Object o) 
-    { 
-	offer("end of array");
-	int where = 0;
-	
-        while(!peek().toString().equals("end of array"))
-	    {
-		if(!peek().toString().equals(o))	
-		    {
-			return where;
-		    }
-		offer(poll());
-		where++;
-	    }  
-	return -1; 
-    }
+    
     
 
     /*                                                                          
