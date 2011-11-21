@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 
 /*
@@ -141,14 +142,7 @@ import java.util.ArrayList;
     }//length
 
     /*
-      Function: ClearAll
-      Description: Clears the Stack
-      Author: Xander Chase
-      Input:Nothing 
-      Output:Nothing
-    */
-
-
+ 
 
     /*
       Fuction: Randomize
@@ -223,37 +217,37 @@ import java.util.ArrayList;
 	/**
 	Authors: Emily and Alex
 	Input: Object number (user is searching for its frequency)
-	Output: int buddha (# of times number appears)
+	Output: int counter (# of times number appears)
 	Purpose: Find the frequency of number
 	**/
 
     int frequency(Object number)
     {
-	Object[] jesus = new Object[this.size()]; //new array that allows us to search through the data
-	int buddha = 0; //incrementer
-	int moses = this.size(); //size of the stack, need it to stay constant
+	Object[] original_array = new Object[this.size()]; //new array that allows us to search through the data
+	int counter = 0; //incrementer
+	int temp_array = this.size(); //size of the stack, need it to stay constant
 
 	while(this.isEmpty() == false) //this pops everything in the stack and puts it in our new array
 	    {
-		for (int i = 0; i < moses; i++)
+		for (int i = 0; i < temp_array; i++)
 		    {
-			jesus[i] = this.pop();
+			original_array[i] = this.pop();
 		    }//while
 
 	    }//while
 
-	for (int x = 0; x<jesus.length; x++) //goes through the new array and counts the frequency, incrementing buddha
+	for (int x = 0; x<original_array.length; x++) //goes through the new array and counts the frequency, incrementing buddha
 	    {
-		if(jesus[x]==number) buddha++;
+		if(original_array[x]==number) counter++;
 		   
 	    }//for
 
-	for (int j = moses-1; j >= 0; j--) //pushes everything back into the stack in original order
+	for (int j = temp_array-1; j >= 0; j--) //pushes everything back into the stack in original order
 	    {
-		this.push(jesus[j]);
+		this.push(original_array[j]);
 	    }//for
 
-	return buddha;
+	return counter;
 
     }//frequency
 

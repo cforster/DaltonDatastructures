@@ -108,17 +108,25 @@ public class LinkedListH{
 
 //Isabella
 //indexOf
+    int indexOf(double d)
+    {
+	return indexOf(first,d,0);
+    }
+
 int indexOf (Node n, double d, int index)
 {
-    indexOf(first, 3.0, 0);
-    if (first.data==d)
+    if (n.data==d)
 	{
 	    return index;
 	}
-    else
+    else if ()
+	{
 	return indexOf(n.pointer, d, index+1);
+	}
+    else
+	{
+	return null;
+	}
 }
-
-
 //class
 }
