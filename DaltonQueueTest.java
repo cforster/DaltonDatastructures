@@ -2,15 +2,14 @@
 public class DaltonQueueTest extends DaltonQueue
 { 
     public static void main(String[] args)
-    { Queue classQueue = new Queue();
+    { 
+	DaltonQueue classQueue = new DaltonQueue();
 	classQueue.offer(3);
 	classQueue.offer(4);
-	classQueue.length;
-	classQueue.search(3);
-	classQueue.dump;
-	
-
-
+	System.out.println(classQueue.length());
+	System.out.println(classQueue.search(3));
+	classQueue.dump();
+	System.out.println(classQueue.length());
     }
     
 }
