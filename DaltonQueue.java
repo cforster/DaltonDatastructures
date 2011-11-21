@@ -21,10 +21,13 @@ public class DaltonQueue extends java.util.LinkedList
     
     public String peek_all()
     {
+	offer("end of array");
 	String input="";
-	for (int i=0; i<(this.size()+1);i++)
+
+	while(!peek().toString().equals("end of array"))
 	    {
-		input=input + ", " + this.poll();
+		input = input + " " + this.peek();
+		offer(poll());
 	    }
 	return input;
     }
