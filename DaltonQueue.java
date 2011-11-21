@@ -15,18 +15,20 @@ public class DaltonQueue extends java.util.LinkedList
     /*
       Author: Malina
       Function: peek_all
+      Parameters: none
+      Returns: String with all elements in Queue
     */
-    /*
+    
     public String peek_all()
     {
 	String input="";
-	for (int i=front; i<back; i++)
+	for (int i=0; i<(this.size()+1);i++)
 	    {
-		input=input + ", " + Array[index];
+		input=input + ", " + this.poll();
 	    }
 	return input;
     }
-    */
+ 
 
 
 
