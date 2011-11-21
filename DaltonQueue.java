@@ -105,11 +105,17 @@ public class DaltonQueue extends java.util.Queue
 	//sort the array:
 	if(queue[counter]<queue[counter--])	 
 	    {
-	  
+		int greater = queue[counter--];
+		int smaller = queue[counter];
+		queue[counter]=greater;
+		queue[counter--]=smaller;
 	    }
 	
-
 	//return it to the queue:
+	for (counter=0; counter<queue.size(); counter++)
+	    {
+		offer(queue[counter]);
+	    }
     }
 
     /*

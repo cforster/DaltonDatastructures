@@ -2,13 +2,13 @@ boolean add
 void add
 boolean addAll
 boolean addAll (int index,)
-void clear()--> annelise
+void clear()--> annelise, Derek
 boolean contains--> Sophia
 boolean containsAll
 boolean equals
 get--> Katherine
 int hashCode()
-int indexOf
+int indexOf--> Isabella
 boolean isEmpty()-->Sophia
 iterator()
 int lastIndexOf
@@ -18,8 +18,8 @@ remove(int index)
 boolean remove
 boolean removeAll
 retainAll
-set--> All of us
-size()--> All of us
+set-->Jason
+size()
 subList
 toArray() --> Katherine
 toArray(T[] a)

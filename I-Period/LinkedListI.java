@@ -1,7 +1,30 @@
+import java.util.Random;
 public class LinkedListI
 {
     
     Node first;//is a pointer
+    
+    //Jeff Stern, addLast
+    public void addLast(int data)
+    {
+	//make the new node:
+	Node temp = new Node();
+	temp.data = data;
+	
+       
+	if (temp==first) add (data);//deals with error trying to run addLast for adding an object to first node-->runs the method add instead under this condition
+	   
+         //add to the end:
+	getLastNode(first).pointer=temp;
+    }//addLast
+
+    //Charles Forster, get last node
+    public Node getLastNode(Node n)
+    {
+	if(n.pointer==null) return n;
+	return getLastNode(n.pointer);
+    }
+
 
     public void add(int data)
     {
@@ -28,9 +51,11 @@ public class LinkedListI
     Input: Null
     Output: Null
     Function: Converts Linked List to an Array
+    
+    EDITS: Maya added return statemet, initially it was void, I changed it to int[] in order to use in shuffle
     */
 
-    public void toArray()
+    public int[] toArray()
     {
 	int[] one = new int[this.size(first)];
 	Node temp=first; 
@@ -40,7 +65,7 @@ public class LinkedListI
 		one[i]=temp.data;
 		temp=temp.pointer;
 	    }//for loop
-
+	return one;
     }//toArray
 
 
@@ -54,7 +79,7 @@ public class LinkedListI
     public void print(Node n)
     {
        
-	System.out.println(n.data);
+	if(n!=null) System.out.println(n.data);
 
 	if(n.pointer!= null)
 	    {
@@ -195,29 +220,72 @@ public class LinkedListI
     }//clone
 
 
-    /*Name: Randomize the clone
-      Function: Returns a duplicated, randomized linkedlist
-      Authors: Maya Klabin and Xander Chase
-      Input: Original list
-      Output: New Randomized form of the original list
+    /*
+      Name: remove all
+      Function: makes first node null, which clears the linked list
+      Authors: Maya Klabin
+      Input: nothing
+      Output: nothing
      */
 
-    public Node randomizeclone(Node n)
+    public void removeAll()
     {
-	this.add(1);
-	if(n.pointer!=null)
+	first = null;
+    }//removeAll
+
+
+    /*Name: Shuffle
+      Function: Randomizes order of elements
+      Authors: Maya Klabin / Xander Chase helped create idea and worked on logic (unable to write code because he was at MUN)
+      Input: nothing
+      Output: nothing
+     */
+
+    public void shuffle()
+    {
+	Random rand = new Random();
+	int[] newarray = toArray();
+	for( int i =0; i < newarray.length; i++)
 	    {
-		Node duplicate = new Node();
-		duplicate.data = n.data;
-		duplicate.pointer = randomizeclone(n.pointer);
-		return duplicate;
+		int ranpos = rand.nextInt(newarray.length);
+		int temp = newarray[i];
+		newarray[i] = newarray[ranpos];
+		newarray[ranpos] = temp;
 	    }
-	
+	removeAll();
+	for(int t : newarray)
+	    {
+		add(t);
+	    }
+    }//shuffle
 
-	return null;
 
+   
+    
+//stern/dubin
+    public void clear()
+    {
+	first=null;
+    }//clear
+/*
+Authors: stern/dubin
+Function: Return the index of the first occurrence of the specified element in the list, or -1 if this list does not contain the element.
+*/
+    public int indexOf (int o)
+    {
+    Node n = first;
+    int index = 0;
+    while (n!=null)
+	{
+	    if(n.data == o)
+		{
+	     	    return index;
+		}
+	    index++;
+	    n=n.pointer;
+	}
+    return -1;
 
-    }//randomize
+    }//index of
 
-}//class
-
+}  

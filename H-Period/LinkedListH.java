@@ -2,7 +2,6 @@ public class LinkedListH{
 
  //Author: All of Us
     Node first; //pointer to a Node
-
     LinkedListH(){}
 
     void  addfirst(double data)
@@ -38,6 +37,7 @@ public class LinkedListH{
       	    }
 	n.setData(d);
     }
+    
 
     //Author: Katherine
     //Function: toArray
@@ -74,12 +74,21 @@ public class LinkedListH{
 	return n.data;
     } //end of get
 
+    /** Annelise & Derek (clear fuction)
+     **/  
+    void clear(Node header, Node n)
+       { 
+	   while (first != n)
+	       {
+		   first= null;
+	       }
+       }
 
 
 
     //Sophia
     // isempty 
- boolean isEmpty ()
+    boolean isEmpty ()
     {
 	if (first==null)
 	    { 
@@ -96,6 +105,20 @@ public class LinkedListH{
 	else if(n.pointer==null) return false;
 	else return contains(n.pointer, d);
     }
-    
+
+//Isabella
+//indexOf
+int indexOf (Node n, double d, int index)
+{
+    indexOf(first, 3.0, 0);
+    if (first.data==d)
+	{
+	    return index;
+	}
+    else
+	return indexOf(n.pointer, d, index+1);
+}
+
+
 //class
 }
