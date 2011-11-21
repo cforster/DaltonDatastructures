@@ -119,11 +119,6 @@ public class DaltonQueue extends java.util.Queue
     }
 
     /*
-      Author: Katherine 
-      Function: Reverse (in ABC, out CBA)
-    /*
-
-    {
     
 	/*
 	  Author: Katherine
@@ -136,10 +131,7 @@ public class DaltonQueue extends java.util.Queue
 		    this.remove();
 		} 
 	}
-	
-
-
-    }
+       
 
     /*
       Author: Katherine
