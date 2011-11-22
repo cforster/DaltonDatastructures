@@ -66,19 +66,19 @@ public class DaltonQueue extends java.util.LinkedList
 
     void ReplaceAt(int toreplace, int rep)
     {
-	offer("end of array"); 
+	offer("end of array"); //marks the end of the array
 	int length = 0;
 	//System.out.println("before the while");
 	System.out.println(this.peek().toString());
 	//System.out.println("after the peek");
-	while(!peek().toString().equals("end of array")) //
+	while(!peek().toString().equals("end of array")) //loops until end of array
 	    {
-		offer(poll());
+		offer(poll()); 
 		length++; //increase length counter
 		if (toreplace==length)
 		    {
-			this.poll();
-			this.offer(rep);
+			this.poll(); //removes the existing int at toreplace
+			this.offer(rep); //puts in the new int
 		    }
 	    }
 	poll();
@@ -90,7 +90,6 @@ public class DaltonQueue extends java.util.LinkedList
     /*
       Author: Isabella
      */
-    //in progress
     void sort()
     {
 	//make the queue into the array:
