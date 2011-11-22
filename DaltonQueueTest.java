@@ -1,19 +1,21 @@
 // queue test class
-public class DaltonQueueTest extends DaltonQueue
-{ 
+
+public class DaltonQueueTest
+{
     public static void main(String[] args)
-    { 
-	DaltonQueue classQueue = new DaltonQueue();
-	classQueue.offer(3);
-	classQueue.offer(4);
-	System.out.println(classQueue.length());// sophia's- will return 2 
-<<<<<<< HEAD
-	classQueue.dump();
-=======
-	System.out.println(classQueue.search(3));
-	classQueue.dump();    //katherine's- will return 0
->>>>>>> origin/master
-	System.out.println(classQueue.length());// sophia's-will return 0 after dump
+    {
+	DaltonQueue dq = new DaltonQueue();
+
+	dq.add(3);
+	dq.add(5);
+	dq.add(8);
+	dq.add(10);
+	System.out.println(dq.peek_all());
+	System.out.println(dq.length());
+	dq.dump();
+	//System.out.println(dq.search(3));
+	dq.dump();    //katherine's- will return 0
+	System.out.println(dq.length());
     }
     
 }
