@@ -29,6 +29,7 @@ public class DaltonQueue extends java.util.LinkedList
 		input = input + " " + this.peek();
 		offer(poll());
 	    }
+	poll();
 	return input;
     }
  
@@ -78,8 +79,11 @@ public class DaltonQueue extends java.util.LinkedList
 	//make the queue into the array:
 	Object[] queue = new Object[this.size()]; 
 	int counter = 0;
+
 	while (!this.isEmpty()) //go through the queue
 	    {
+
+		//System.out.println(this.poll());
 		queue[counter++]= this.poll();
 	    }
 
@@ -90,7 +94,7 @@ public class DaltonQueue extends java.util.LinkedList
 	for (counter=0; counter<queue.length; counter++)
 	    {
 		this.offer(queue[counter]);
-	    }
+	   }
     }
 
 
