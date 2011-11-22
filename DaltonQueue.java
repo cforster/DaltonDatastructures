@@ -49,6 +49,7 @@ public class DaltonQueue extends java.util.LinkedList
 		offer(poll());
 		length++;// increase length counter
 	    }
+	poll();
 	return length; // returns length variable
     }
     

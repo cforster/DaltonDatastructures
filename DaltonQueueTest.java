@@ -12,6 +12,8 @@ public class DaltonQueueTest
 	dq.add(10);
 	System.out.println(dq.peek_all());
 	System.out.println(dq.length());// sophia's- will return 2 
+	dq.add(4);
+	System.out.println(dq.length());
 	dq.dump();
 	//System.out.println(dq.search(3));
 	dq.dump();    //katherine's- will return 0
