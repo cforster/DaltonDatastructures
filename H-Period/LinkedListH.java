@@ -90,20 +90,20 @@ public class LinkedListH{
     // isempty 
     boolean isEmpty ()
     {
-	if (first==null)
+	if (first==null) //if the first place is empty 
 	    { 
-		return true;
+		return true;// returns true
 	    }
-	return false;
+	return false; // else return false 
     }
 
     //Sophia 
     // contains 
-    boolean contains (Node n, double d)
+    boolean contains (Node n, double d) // parameters node and double
     {
-	if(n.data == d) return true;
-	else if(n.pointer==null) return false;
-	else return contains(n.pointer, d);
+	if(n.data == d) return true;// if data ==d return true
+	else if(n.pointer==null) return false; // else if null return flse
+	else return contains(n.pointer, d);//return n.pointer, d 
     }
 
 //Isabella

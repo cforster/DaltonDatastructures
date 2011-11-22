@@ -42,15 +42,16 @@ public class DaltonQueue extends java.util.LinkedList
     */
     public int length()
     {
-	offer("end of array");
-	int length =0;
+	offer("end of array"); // puts in something to define the end of the array
+	int length =0; // declares variable length =0
 	
-	while(!peek().toString().equals("end of array")) 
+	while(!peek().toString().equals("end of array"))  // while loop
 	    {
 		offer(poll());
-		length++;
+		length++;// increase length counter
 	    }
-	return length; 
+	poll();
+	return length; // returns length variable
     }
     
     

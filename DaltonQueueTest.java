@@ -17,8 +17,9 @@ public class DaltonQueueTest
 	dq.sort();
 	System.out.println(dq.peek_all());
 	dq.dump();
-	System.out.println(dq.peek_all());
-
+	//System.out.println(dq.search(3));
+	dq.dump();    //katherine's- will return 0
+	System.out.println(dq.length());// sophia's- will return 0 after dump 
     }
     
 }
