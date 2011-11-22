@@ -16,10 +16,16 @@ public class DaltonQueueTest
 	//System.out.println(dq.length());
 	dq.sort();
 	System.out.println(dq.peek_all());
-	dq.dump();
+	//	dq.dump();
 	//System.out.println(dq.search(3));
-	dq.dump();    //katherine's- will return 0
+	//dq.dump();    //katherine's- will return 0
+
 	System.out.println(dq.length());// sophia's- will return 0 after dump 
+	//System.out.println("Now we are doing replace");
+	dq.ReplaceAt(3, 4);
+	//System.out.println("testing");
+	System.out.println(dq.peek_all());
+
     }
     
 }

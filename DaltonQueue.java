@@ -57,16 +57,32 @@ public class DaltonQueue extends java.util.LinkedList
     
 
     /*                                                                          
-                                                          
-
-    /* 
-       Author: ISABELLA and malina. 
-
+       Author: ISABELLA (the brains) and malina (the moral support).
+       function: replaces value at some place
+       parameters: int value of what we want to replace, int we want to replace it with
+       returns: void
+       
      */
-    /*
-    void ReplaceAt(int index, int rep)
+
+    void ReplaceAt(int toreplace, int rep)
     {
-	Array[index] = rep;
+	offer("end of array"); 
+	int length = 0;
+	//System.out.println("before the while");
+	System.out.println(this.peek().toString());
+	//System.out.println("after the peek");
+	while(!peek().toString().equals("end of array")) //
+	    {
+		offer(poll());
+		length++; //increase length counter
+		if (toreplace==length)
+		    {
+			this.poll();
+			this.offer(rep);
+		    }
+	    }
+	poll();
+
     }
 
 
@@ -105,8 +121,7 @@ public class DaltonQueue extends java.util.LinkedList
     */
 
     void dump()
-    {
-	 while(!this.isEmpty())
+    {	 while(!this.isEmpty())
 	     {
 		this.remove();
 	     } 
