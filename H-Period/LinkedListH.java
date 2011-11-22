@@ -108,25 +108,31 @@ public class LinkedListH{
 
 //Isabella
 //indexOf
-    int indexOf(double d)
+
+//overloading indexOf so that it will still function when only given the number to find
+int indexOf(double d)
     {
 	return indexOf(first,d,0);
     }
 
 int indexOf (Node n, double d, int index)
 {
+    //if the node contains the double
     if (n.data==d)
 	{
 	    return index;
 	}
-    else if ()
+    //if the double is not in the linkedlist at all
+    else if(n.pointer==null)
 	{
-	return indexOf(n.pointer, d, index+1);
+	    return -1;
 	}
-    else
+    //goes to the next node
+    else 
 	{
-	return null;
+	    return indexOf(n.pointer, d, index+1);
 	}
+
 }
 //class
 }
